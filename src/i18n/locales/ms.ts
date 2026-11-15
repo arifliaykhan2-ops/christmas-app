@@ -169,6 +169,15 @@ const ms: Strings = {
     nothing: "Tiada pembelian terdahulu ditemui.",
     unavailable: "Pembelian tidak tersedia sekarang. Cuba lagi nanti.",
     error: "Sesuatu tidak kena. Cuba lagi.",
+    addPhoto: "Tambah foto anda",
+    keepTitle: "Cantik sekali! Buka Premium untuk kekalkan foto anda.",
+    keep: "Kekalkan foto",
+  },
+  widget: {
+    title: "Widget kira detik",
+    cta: "Letakkan kira detik di Skrin Utama",
+    steps: ["Sentuh dan tahan ruang kosong di Skrin Utama sehingga app bergoyang.", "Ketik Edit (atau +) di penjuru kiri atas, kemudian Tambah Widget.", "Cari Christmas, pilih saiz dan ketik Tambah Widget."],
+    lock: "Skrin Kunci: sentuh dan tahan Skrin Kunci, ketik Sesuaikan → Skrin Kunci, kemudian ketik ruang widget.",
   },
   gifts: {
     title: "Senarai hadiah",

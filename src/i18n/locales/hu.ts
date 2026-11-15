@@ -169,6 +169,15 @@ const hu: Strings = {
     nothing: "Nem találtunk korábbi vásárlást.",
     unavailable: "A vásárlás most nem érhető el. Próbáld újra később.",
     error: "Hiba történt. Próbáld újra.",
+    addPhoto: "Saját fotó hozzáadása",
+    keepTitle: "Csodás! Oldd fel a Premiumot, hogy megmaradjon a fotód.",
+    keep: "Megtartom a fotót",
+  },
+  widget: {
+    title: "Visszaszámláló widget",
+    cta: "Tedd a visszaszámlálót a Főképernyőre",
+    steps: ["Tartsd az ujjad a Főképernyő egy üres részén, amíg az appok remegni nem kezdenek.", "Koppints a bal felső sarokban a Szerkesztés (vagy +) gombra, majd a Widget hozzáadása elemre.", "Keress rá a Christmas szóra, válassz méretet, és koppints a Widget hozzáadása gombra."],
+    lock: "Zárolási képernyő: tartsd az ujjad a zárolási képernyőn, koppints a Testreszabás → Zárolási képernyő lehetőségre, majd a widgetterületre.",
   },
   gifts: {
     title: "Ajándéklista",

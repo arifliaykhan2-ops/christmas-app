@@ -17,6 +17,8 @@ type Settings = {
   /** Theme and photo actually in use: Premium choices fall back to the free look when the subscription ends. */
   theme: ThemeId;
   photo: string | null;
+  /** A photo a free user picked to try: shown on the countdown with a "keep it" offer, never on the widget. */
+  previewPhoto: string | null;
   setMode: (m: ChristmasMode) => void;
   setReminders: (on: boolean) => Promise<boolean>;
   setSnow: (on: boolean) => void;
@@ -45,6 +47,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
 
   const theme: ThemeId = premium && THEMES[themeChoice] ? themeChoice : FREE_THEME;
   const photo = premium ? (photoChoice?.uri ?? null) : null;
+  const previewPhoto = premium ? null : (photoChoice?.uri ?? null);
 
   // Keep the Home/Lock Screen widget in sync (no-op in Expo Go).
   useEffect(() => {
@@ -55,6 +58,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       widgetStore?.set('themeTop', THEMES[theme].top);
       widgetStore?.set('themeBottom', THEMES[theme].bottom);
       widgetStore?.set('photo', premium && photoChoice ? photoChoice.widget : undefined);
+      // Free widgets show an "Add your photo" hint that opens the paywall.
+      widgetStore?.set('premium', premium ? 1 : 0);
       ExtensionStorage.reloadWidget();
     } catch {}
   }, [mode, modeLoaded, lang, theme, premium, photoChoice]);
@@ -75,6 +80,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       onboarded,
       theme,
       photo,
+      previewPhoto,
       setMode,
       setSnow,
       setTheme,
@@ -96,7 +102,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         setPhoto(null);
       },
     }),
-    [ready, mode, reminders, snow, onboarded, theme, photo, photoChoice, setMode, setSnow, setTheme, setRemindersRaw, setOnboarded, setPhoto],
+    [ready, mode, reminders, snow, onboarded, theme, photo, previewPhoto, photoChoice, setMode, setSnow, setTheme, setRemindersRaw, setOnboarded, setPhoto],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

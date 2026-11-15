@@ -169,6 +169,15 @@ const pt: Strings = {
     nothing: "Nenhuma compra anterior encontrada.",
     unavailable: "As compras não estão disponíveis agora. Tente novamente mais tarde.",
     error: "Algo deu errado. Tente novamente.",
+    addPhoto: "Adicione sua foto",
+    keepTitle: "Ficou incrível! Desbloqueie o Premium para manter sua foto.",
+    keep: "Manter minha foto",
+  },
+  widget: {
+    title: "Widget da contagem regressiva",
+    cta: "Coloque a contagem regressiva na Tela de Início",
+    steps: ["Toque e segure um espaço vazio da Tela de Início até os apps tremerem.", "Toque em Editar (ou +) no canto superior esquerdo e depois em Adicionar Widget.", "Busque Christmas, escolha um tamanho e toque em Adicionar Widget."],
+    lock: "Tela Bloqueada: toque e segure a Tela Bloqueada, toque em Personalizar → Tela Bloqueada e depois na área de widgets.",
   },
   gifts: {
     title: "Lista de presentes",

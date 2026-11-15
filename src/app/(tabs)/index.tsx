@@ -3,9 +3,11 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import * as Sharing from 'expo-sharing';
 import { useEffect, useRef, useState, type ComponentRef } from 'react';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { captureRef } from 'react-native-view-shot';
-import { Card, CircleButton, H1, Icon, InfoTile, P, RoundIcon, Scene, haptic } from '@/components/ui';
+import { WidgetPreview } from '@/components/WidgetPreview';
+import { Button, Card, CircleButton, H1, Icon, InfoTile, P, RoundIcon, Scene, TextButton, haptic } from '@/components/ui';
 import { fmt, formatDayMonth, formatMoney, formatNumber, strings, useI18nVersion } from '@/i18n';
 import { countdown, doorDate, todaysDoor } from '@/lib/christmas';
 import { THEMES } from '@/lib/personalize';
@@ -26,7 +28,7 @@ function useNow(intervalMs = 1000) {
 export default function CountdownScreen() {
   useI18nVersion();
   const s = strings.countdown;
-  const { mode, theme, photo } = useSettings();
+  const { mode, theme, photo, previewPhoto, choosePhoto, clearPhoto } = useSettings();
   const premium = usePremium().active;
   // Free users' shared pictures carry the app name; Premium removes it.
   const [stamp, setStamp] = useState(false);
@@ -38,6 +40,23 @@ export default function CountdownScreen() {
   const [gifts] = useStored<{ budget: number; gifts: { price: number; status: string }[] }[]>('gifts', []);
   const spent = gifts.reduce((a, p) => a + p.gifts.filter((g) => g.status !== 'idea').reduce((b, g) => b + g.price, 0), 0);
   const budget = gifts.reduce((a, p) => a + p.budget, 0);
+  // Free users try their own photo right away; the share image never includes a preview.
+  const shown = photo ?? (stamp ? null : previewPhoto);
+
+  // First launch after onboarding: offer Premium once (closable, Apple 3.1.2).
+  const [introSeen, setIntroSeen, introLoaded] = useStored<boolean>('paywall.intro', false);
+  useEffect(() => {
+    if (!introLoaded || introSeen) return;
+    setIntroSeen(true);
+    if (!premium) router.push('/premium');
+  }, [introLoaded, introSeen, premium, setIntroSeen]);
+
+  async function addPhoto() {
+    haptic.tap();
+    try {
+      await choosePhoto();
+    } catch {}
+  }
 
   async function share() {
     try {
@@ -67,9 +86,9 @@ export default function CountdownScreen() {
           inner={st.heroInner}
           gradient={THEMES[theme].colors}
           background={
-            photo ? (
+            shown ? (
               <>
-                <Image source={{ uri: photo }} style={StyleSheet.absoluteFill} contentFit="cover" />
+                <Image source={{ uri: shown }} style={StyleSheet.absoluteFill} contentFit="cover" />
                 <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.25)', 'rgba(0,0,0,0.78)']} locations={[0, 0.45, 1]} style={StyleSheet.absoluteFill} />
               </>
             ) : undefined
@@ -81,7 +100,13 @@ export default function CountdownScreen() {
                 <RoundIcon icon="color-palette-outline" label={strings.premium.personalize} filled onPress={() => router.push(premium ? '/customize' : '/premium')} />
               </View>
             )}
-            {!photo && (
+            {!shown && !stamp && (
+              <Pressable accessibilityRole="button" onPress={addPhoto} style={({ pressed }) => [st.addPhoto, pressed && { opacity: 0.75 }]}>
+                <Ionicons name="camera" size={18} color={colors.dark} />
+                <Text style={st.addPhotoText} numberOfLines={1}>{strings.premium.addPhoto}</Text>
+              </Pressable>
+            )}
+            {!shown && (
               <>
                 <View style={st.giftFloat}>
                   <Icon name="gift" size={76} float />
@@ -123,6 +148,18 @@ export default function CountdownScreen() {
         </Card>
       </View>
 
+      {/* Try-before-you-buy: the photo is already on the card, Premium keeps it. */}
+      {!!previewPhoto && (
+        <Card inner={{ gap: 10 }}>
+          <View style={st.keepRow}>
+            <Icon name="sparkles" size={40} />
+            <P style={{ flex: 1, fontSize: 16 }}>{strings.premium.keepTitle}</P>
+          </View>
+          <Button title={strings.premium.keep} chevrons onPress={() => router.push('/premium')} />
+          <TextButton title={strings.premium.removePhoto} onPress={clearPhoto} />
+        </Card>
+      )}
+
       {/* Notification-style pill: today's advent door. */}
       <Pressable
         onPress={() => {
@@ -135,6 +172,23 @@ export default function CountdownScreen() {
             <P style={{ fontSize: 15 }}>{door ? s.doorReady : fmt(s.adventSoon, { date: formatDayMonth(doorDate(now, 1)) })}</P>
           </View>
           <Icon name="star" size={48} />
+        </Card>
+      </Pressable>
+
+      {/* The widget can't add itself (iOS rule), so show it and how to place it. */}
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => {
+          haptic.tap();
+          router.push('/widget');
+        }}
+      >
+        <Card inner={st.widgetInner}>
+          <WidgetPreview width={84} />
+          <View style={{ flex: 1, gap: 4 }}>
+            <P style={{ fontSize: 16 }}>{strings.widget.cta}</P>
+            <Text style={st.widgetMore}>{strings.widget.title} ›</Text>
+          </View>
         </Card>
       </Pressable>
 
@@ -171,6 +225,24 @@ const st = StyleSheet.create({
   heroFoot: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   personalize: { position: 'absolute', top: 6, start: 0, zIndex: 2 },
   stamp: { color: 'rgba(255,255,255,0.75)', fontFamily: fonts.semi, fontWeight: weights.semi, fontSize: 13, textAlign: 'center', marginTop: -4 },
+  addPhoto: {
+    position: 'absolute',
+    top: 8,
+    alignSelf: 'center',
+    zIndex: 3,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    maxWidth: '62%',
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    borderRadius: radius.pill,
+    backgroundColor: colors.yellow,
+  },
+  addPhotoText: { color: colors.dark, fontFamily: fonts.bold, fontWeight: weights.bold, fontSize: 15, flexShrink: 1 },
+  keepRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  widgetInner: { flexDirection: 'row', alignItems: 'center', gap: 14, paddingVertical: 14 },
+  widgetMore: { color: colors.yellow, fontFamily: fonts.semi, fontWeight: weights.semi, fontSize: 14 },
   pillInner: { flexDirection: 'row', alignItems: 'center', paddingVertical: 14, gap: 12 },
   pillText: { flex: 1, backgroundColor: 'rgba(8,42,21,0.35)', borderRadius: radius.pill, paddingVertical: 12, paddingHorizontal: 18 },
   grid: { flexDirection: 'row', gap: 12 },

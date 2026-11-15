@@ -169,6 +169,15 @@ const sk: Strings = {
     nothing: "Nenašli sa žiadne predchádzajúce nákupy.",
     unavailable: "Nákupy teraz nie sú dostupné. Skús to neskôr.",
     error: "Niečo sa pokazilo. Skús to znova.",
+    addPhoto: "Pridaj svoju fotku",
+    keepTitle: "Vyzerá to skvelo! Odomkni Premium a fotka ti zostane.",
+    keep: "Ponechať fotku",
+  },
+  widget: {
+    title: "Widget odpočítavania",
+    cta: "Daj si odpočítavanie na plochu",
+    steps: ["Podrž prst na prázdnom mieste plochy, kým sa aplikácie nezačnú triasť.", "Klepni vľavo hore na Upraviť (alebo +) a potom na Pridať widget.", "Vyhľadaj Christmas, vyber veľkosť a klepni na Pridať widget."],
+    lock: "Zamknutá obrazovka: podrž prst na zamknutej obrazovke, klepni na Prispôsobiť → Zamknutá obrazovka a potom na oblasť widgetov.",
   },
   gifts: {
     title: "Zoznam darčekov",

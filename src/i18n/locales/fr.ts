@@ -169,6 +169,15 @@ const fr: Strings = {
     nothing: "Aucun achat précédent trouvé.",
     unavailable: "Les achats ne sont pas disponibles pour le moment. Réessayez plus tard.",
     error: "Une erreur s’est produite. Veuillez réessayer.",
+    addPhoto: "Ajoute ta photo",
+    keepTitle: "Superbe ! Passe à Premium pour garder ta photo.",
+    keep: "Garder ma photo",
+  },
+  widget: {
+    title: "Widget du compte à rebours",
+    cta: "Mets le compte à rebours sur ton écran d’accueil",
+    steps: ["Touche longuement un espace vide de l’écran d’accueil jusqu’à ce que les apps bougent.", "Touche Modifier (ou +) en haut à gauche, puis Ajouter un widget.", "Cherche Christmas, choisis une taille et touche Ajouter le widget."],
+    lock: "Écran verrouillé : touche longuement l’écran verrouillé, touche Personnaliser → Écran verrouillé, puis la zone des widgets.",
   },
   gifts: {
     title: "Liste de cadeaux",

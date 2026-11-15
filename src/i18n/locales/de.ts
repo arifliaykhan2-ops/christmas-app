@@ -169,6 +169,15 @@ const de: Strings = {
     nothing: "Keine früheren Käufe gefunden.",
     unavailable: "Käufe sind gerade nicht verfügbar. Bitte versuche es später erneut.",
     error: "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    addPhoto: "Dein Foto hinzufügen",
+    keepTitle: "Sieht toll aus! Mit Premium bleibt dein Foto.",
+    keep: "Foto behalten",
+  },
+  widget: {
+    title: "Countdown-Widget",
+    cta: "Hol dir den Countdown auf den Home-Bildschirm",
+    steps: ["Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, bis die Apps wackeln.", "Tippe oben links auf „Bearbeiten“ (oder +) und dann auf „Widget hinzufügen“.", "Suche nach Christmas, wähle eine Größe und tippe auf „Widget hinzufügen“."],
+    lock: "Sperrbildschirm: Sperrbildschirm gedrückt halten, „Anpassen“ → „Sperrbildschirm“ wählen und auf den Widget-Bereich tippen.",
   },
   gifts: {
     title: "Geschenkeliste",

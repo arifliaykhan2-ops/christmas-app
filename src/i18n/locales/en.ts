@@ -167,6 +167,15 @@ const en = {
     nothing: 'No previous purchases were found.',
     unavailable: 'Purchases are not available right now. Please try again later.',
     error: 'Something went wrong. Please try again.',
+    addPhoto: "Add your photo",
+    keepTitle: "Looks amazing! Unlock Premium to keep your photo.",
+    keep: "Keep my photo",
+  },
+  widget: {
+    title: "Countdown widget",
+    cta: "Put the countdown on your Home Screen",
+    steps: ["Touch and hold an empty spot on your Home Screen until the apps jiggle.", "Tap Edit (or +) in the top-left corner, then Add Widget.", "Search for Christmas, choose a size and tap Add Widget."],
+    lock: "Lock Screen: touch and hold the Lock Screen, tap Customize → Lock Screen, then tap the widget area.",
   },
   gifts: {
     title: 'Gift List',

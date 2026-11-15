@@ -169,6 +169,15 @@ const ro: Strings = {
     nothing: "Nu s-au găsit achiziții anterioare.",
     unavailable: "Achizițiile nu sunt disponibile acum. Încearcă mai târziu.",
     error: "Ceva n-a mers bine. Încearcă din nou.",
+    addPhoto: "Adaugă poza ta",
+    keepTitle: "Arată superb! Deblochează Premium ca să păstrezi poza.",
+    keep: "Păstrează poza",
+  },
+  widget: {
+    title: "Widget pentru numărătoare",
+    cta: "Pune numărătoarea pe ecranul principal",
+    steps: ["Ține apăsat un loc gol de pe ecranul principal până când aplicațiile se mișcă.", "Apasă Editează (sau +) în colțul din stânga sus, apoi Adaugă widget.", "Caută Christmas, alege o dimensiune și apasă Adaugă widget."],
+    lock: "Ecranul de blocare: ține apăsat ecranul de blocare, apasă Personalizează → Ecran de blocare, apoi zona de widgeturi.",
   },
   gifts: {
     title: "Lista de cadouri",

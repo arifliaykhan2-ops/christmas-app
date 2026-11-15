@@ -12,38 +12,39 @@ struct Words {
   let until: String
   let merry: String
   let tomorrow: String
+  var addPhoto = "Add your photo"
 }
 
 private let words: [String: Words] = [
-  "en": Words(days: "Days", until: "until Christmas", merry: "Merry Christmas!", tomorrow: "Tomorrow!"),
-  "fr": Words(days: "Jours", until: "avant Noël", merry: "Joyeux Noël !", tomorrow: "Demain !"),
-  "de": Words(days: "Tage", until: "bis Weihnachten", merry: "Frohe Weihnachten!", tomorrow: "Morgen!"),
-  "it": Words(days: "Giorni", until: "a Natale", merry: "Buon Natale!", tomorrow: "Domani!"),
-  "es": Words(days: "Días", until: "para Navidad", merry: "¡Feliz Navidad!", tomorrow: "¡Mañana!"),
-  "pt": Words(days: "Dias", until: "para o Natal", merry: "Feliz Natal!", tomorrow: "Amanhã!"),
-  "nl": Words(days: "Dagen", until: "tot Kerstmis", merry: "Vrolijk kerstfeest!", tomorrow: "Morgen!"),
-  "da": Words(days: "Dage", until: "til jul", merry: "Glædelig jul!", tomorrow: "I morgen!"),
-  "sv": Words(days: "Dagar", until: "kvar till jul", merry: "God jul!", tomorrow: "I morgon!"),
-  "nb": Words(days: "Dager", until: "til jul", merry: "God jul!", tomorrow: "I morgen!"),
-  "fi": Words(days: "Päivää", until: "jouluun", merry: "Hyvää joulua!", tomorrow: "Huomenna!"),
-  "pl": Words(days: "Dni", until: "do Świąt", merry: "Wesołych Świąt!", tomorrow: "Jutro!"),
-  "cs": Words(days: "Dní", until: "do Vánoc", merry: "Veselé Vánoce!", tomorrow: "Zítra!"),
-  "sk": Words(days: "Dní", until: "do Vianoc", merry: "Veselé Vianoce!", tomorrow: "Zajtra!"),
-  "hu": Words(days: "Nap", until: "karácsonyig", merry: "Boldog karácsonyt!", tomorrow: "Holnap!"),
-  "ro": Words(days: "Zile", until: "până la Crăciun", merry: "Crăciun fericit!", tomorrow: "Mâine!"),
-  "hr": Words(days: "Dana", until: "do Božića", merry: "Sretan Božić!", tomorrow: "Sutra!"),
-  "el": Words(days: "Ημέρες", until: "ως τα Χριστούγεννα", merry: "Καλά Χριστούγεννα!", tomorrow: "Αύριο!"),
-  "ru": Words(days: "Дней", until: "до Рождества", merry: "С Рождеством!", tomorrow: "Завтра!"),
-  "uk": Words(days: "Днів", until: "до Різдва", merry: "З Різдвом!", tomorrow: "Завтра!"),
-  "ca": Words(days: "Dies", until: "per Nadal", merry: "Bon Nadal!", tomorrow: "Demà!"),
-  "ko": Words(days: "일", until: "크리스마스까지", merry: "메리 크리스마스!", tomorrow: "내일!"),
-  "id": Words(days: "Hari", until: "menuju Natal", merry: "Selamat Natal!", tomorrow: "Besok!"),
-  "ms": Words(days: "Hari", until: "lagi ke Krismas", merry: "Selamat Hari Krismas!", tomorrow: "Esok!"),
-  "vi": Words(days: "Ngày", until: "đến Giáng sinh", merry: "Giáng sinh vui vẻ!", tomorrow: "Ngày mai!"),
-  "hi": Words(days: "दिन", until: "क्रिसमस तक", merry: "मेरी क्रिसमस!", tomorrow: "कल!"),
-  "ja": Words(days: "日", until: "クリスマスまで", merry: "メリークリスマス！", tomorrow: "明日！"),
-  "zh-Hant": Words(days: "天", until: "距離聖誕節", merry: "聖誕快樂！", tomorrow: "明天！"),
-  "ar": Words(days: "يوم", until: "حتى عيد الميلاد", merry: "ميلاد مجيد!", tomorrow: "غدًا!"),
+  "en": Words(days: "Days", until: "until Christmas", merry: "Merry Christmas!", tomorrow: "Tomorrow!", addPhoto: "Add your photo"),
+  "fr": Words(days: "Jours", until: "avant Noël", merry: "Joyeux Noël !", tomorrow: "Demain !", addPhoto: "Ajoute ta photo"),
+  "de": Words(days: "Tage", until: "bis Weihnachten", merry: "Frohe Weihnachten!", tomorrow: "Morgen!", addPhoto: "Dein Foto hier"),
+  "it": Words(days: "Giorni", until: "a Natale", merry: "Buon Natale!", tomorrow: "Domani!", addPhoto: "Aggiungi foto"),
+  "es": Words(days: "Días", until: "para Navidad", merry: "¡Feliz Navidad!", tomorrow: "¡Mañana!", addPhoto: "Añade tu foto"),
+  "pt": Words(days: "Dias", until: "para o Natal", merry: "Feliz Natal!", tomorrow: "Amanhã!", addPhoto: "Adicione sua foto"),
+  "nl": Words(days: "Dagen", until: "tot Kerstmis", merry: "Vrolijk kerstfeest!", tomorrow: "Morgen!", addPhoto: "Jouw foto hier"),
+  "da": Words(days: "Dage", until: "til jul", merry: "Glædelig jul!", tomorrow: "I morgen!", addPhoto: "Tilføj dit foto"),
+  "sv": Words(days: "Dagar", until: "kvar till jul", merry: "God jul!", tomorrow: "I morgon!", addPhoto: "Lägg till foto"),
+  "nb": Words(days: "Dager", until: "til jul", merry: "God jul!", tomorrow: "I morgen!", addPhoto: "Legg til bilde"),
+  "fi": Words(days: "Päivää", until: "jouluun", merry: "Hyvää joulua!", tomorrow: "Huomenna!", addPhoto: "Lisää oma kuva"),
+  "pl": Words(days: "Dni", until: "do Świąt", merry: "Wesołych Świąt!", tomorrow: "Jutro!", addPhoto: "Dodaj zdjęcie"),
+  "cs": Words(days: "Dní", until: "do Vánoc", merry: "Veselé Vánoce!", tomorrow: "Zítra!", addPhoto: "Přidej fotku"),
+  "sk": Words(days: "Dní", until: "do Vianoc", merry: "Veselé Vianoce!", tomorrow: "Zajtra!", addPhoto: "Pridaj fotku"),
+  "hu": Words(days: "Nap", until: "karácsonyig", merry: "Boldog karácsonyt!", tomorrow: "Holnap!", addPhoto: "Saját fotó"),
+  "ro": Words(days: "Zile", until: "până la Crăciun", merry: "Crăciun fericit!", tomorrow: "Mâine!", addPhoto: "Adaugă poza ta"),
+  "hr": Words(days: "Dana", until: "do Božića", merry: "Sretan Božić!", tomorrow: "Sutra!", addPhoto: "Dodaj fotku"),
+  "el": Words(days: "Ημέρες", until: "ως τα Χριστούγεννα", merry: "Καλά Χριστούγεννα!", tomorrow: "Αύριο!", addPhoto: "Βάλε φωτογραφία"),
+  "ru": Words(days: "Дней", until: "до Рождества", merry: "С Рождеством!", tomorrow: "Завтра!", addPhoto: "Добавь своё фото"),
+  "uk": Words(days: "Днів", until: "до Різдва", merry: "З Різдвом!", tomorrow: "Завтра!", addPhoto: "Додай своє фото"),
+  "ca": Words(days: "Dies", until: "per Nadal", merry: "Bon Nadal!", tomorrow: "Demà!", addPhoto: "Afegeix foto"),
+  "ko": Words(days: "일", until: "크리스마스까지", merry: "메리 크리스마스!", tomorrow: "내일!", addPhoto: "내 사진 넣기"),
+  "id": Words(days: "Hari", until: "menuju Natal", merry: "Selamat Natal!", tomorrow: "Besok!", addPhoto: "Tambah fotomu"),
+  "ms": Words(days: "Hari", until: "lagi ke Krismas", merry: "Selamat Hari Krismas!", tomorrow: "Esok!", addPhoto: "Tambah foto"),
+  "vi": Words(days: "Ngày", until: "đến Giáng sinh", merry: "Giáng sinh vui vẻ!", tomorrow: "Ngày mai!", addPhoto: "Thêm ảnh của bạn"),
+  "hi": Words(days: "दिन", until: "क्रिसमस तक", merry: "मेरी क्रिसमस!", tomorrow: "कल!", addPhoto: "अपनी फ़ोटो जोड़ें"),
+  "ja": Words(days: "日", until: "クリスマスまで", merry: "メリークリスマス！", tomorrow: "明日！", addPhoto: "写真を追加"),
+  "zh-Hant": Words(days: "天", until: "距離聖誕節", merry: "聖誕快樂！", tomorrow: "明天！", addPhoto: "加入你的照片"),
+  "ar": Words(days: "يوم", until: "حتى عيد الميلاد", merry: "ميلاد مجيد!", tomorrow: "غدًا!", addPhoto: "أضف صورتك"),
 ]
 
 private func deviceLang() -> String {
@@ -67,6 +68,8 @@ struct ChristmasEntry: TimelineEntry {
   let top: Color
   let bottom: Color
   let photo: UIImage?
+  // Free users see an "Add your photo" hint; tapping the widget opens the paywall.
+  let premium: Bool
 }
 
 private func color(hex: String?, fallback: Color) -> Color {
@@ -85,17 +88,18 @@ private func makeEntry(at date: Date) -> ChristmasEntry {
   let bottom = color(hex: defaults?.string(forKey: "themeBottom"), fallback: Color("festiveBottom"))
   var photo: UIImage? = nil
   if let b64 = defaults?.string(forKey: "photo"), !b64.isEmpty, let data = Data(base64Encoded: b64) { photo = UIImage(data: data) }
+  let premium = defaults?.integer(forKey: "premium") == 1
 
   let cal = Calendar.current
   let (month, day) = mode == "jan7" ? (1, 7) : (12, 25)
   let year = cal.component(.year, from: date)
   let today = cal.startOfDay(for: date)
   var target = cal.date(from: DateComponents(year: year, month: month, day: day))!
-  if today == target { return ChristmasEntry(date: date, days: 0, isToday: true, words: w, top: top, bottom: bottom, photo: photo) }
+  if today == target { return ChristmasEntry(date: date, days: 0, isToday: true, words: w, top: top, bottom: bottom, photo: photo, premium: premium) }
   if today > target { target = cal.date(from: DateComponents(year: year + 1, month: month, day: day))! }
   // Same number as the app's live countdown (full days left).
   let calendarDays = cal.dateComponents([.day], from: today, to: target).day ?? 0
-  return ChristmasEntry(date: date, days: max(0, calendarDays - 1), isToday: false, words: w, top: top, bottom: bottom, photo: photo)
+  return ChristmasEntry(date: date, days: max(0, calendarDays - 1), isToday: false, words: w, top: top, bottom: bottom, photo: photo, premium: premium)
 }
 
 struct Provider: TimelineProvider {
@@ -141,6 +145,20 @@ private struct Headline: View {
   }
 }
 
+private struct PhotoHint: View {
+  let text: String
+  let size: CGFloat
+
+  var body: some View {
+    Text("✨ (text)")
+      .font(.system(size: size, weight: .bold))
+      .foregroundStyle(Color("gold"))
+      .lineLimit(1)
+      .minimumScaleFactor(0.6)
+      .padding(.top, 2)
+  }
+}
+
 struct ChristmasWidgetView: View {
   @Environment(\.widgetFamily) var family
   let entry: ChristmasEntry
@@ -174,6 +192,7 @@ struct ChristmasWidgetView: View {
             Text(entry.words.days.uppercased()).font(.system(size: 12, weight: .bold)).kerning(1.5).foregroundStyle(Color("gold"))
             Text(entry.words.until).font(.system(size: 15, weight: .semibold, design: .serif).italic()).foregroundStyle(Color("cream"))
           }
+          if !entry.premium { PhotoHint(text: entry.words.addPhoto, size: 12) }
         }
         Spacer(minLength: 0)
       }
@@ -187,8 +206,11 @@ struct ChristmasWidgetView: View {
         Headline(entry: entry, size: 46).foregroundStyle(Color("cream"))
         if !entry.isToday {
           Text(entry.words.days.uppercased()).font(.system(size: 10, weight: .bold)).kerning(1.2).foregroundStyle(Color("gold"))
-          Text(entry.words.until).font(.system(size: 11, weight: .semibold, design: .serif).italic()).foregroundStyle(Color("cream")).lineLimit(1).minimumScaleFactor(0.7)
+          if entry.premium {
+            Text(entry.words.until).font(.system(size: 11, weight: .semibold, design: .serif).italic()).foregroundStyle(Color("cream")).lineLimit(1).minimumScaleFactor(0.7)
+          }
         }
+        if !entry.premium { PhotoHint(text: entry.words.addPhoto, size: 10) }
       }
     }
   }
@@ -200,6 +222,7 @@ struct ChristmasWidget: Widget {
   var body: some WidgetConfiguration {
     StaticConfiguration(kind: kind, provider: Provider()) { entry in
       ChristmasWidgetView(entry: entry)
+        .widgetURL(entry.premium ? nil : URL(string: "christmascountdown://premium"))
         .containerBackground(for: .widget) {
           if let photo = entry.photo {
             ZStack {

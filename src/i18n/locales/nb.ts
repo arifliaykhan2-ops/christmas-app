@@ -169,6 +169,15 @@ const nb: Strings = {
     nothing: "Fant ingen tidligere kjøp.",
     unavailable: "Kjøp er ikke tilgjengelig akkurat nå. Prøv igjen senere.",
     error: "Noe gikk galt. Prøv igjen.",
+    addPhoto: "Legg til bildet ditt",
+    keepTitle: "Ser fantastisk ut! Lås opp Premium for å beholde bildet.",
+    keep: "Behold bildet",
+  },
+  widget: {
+    title: "Nedtellingswidget",
+    cta: "Legg nedtellingen på Hjem-skjermen",
+    steps: ["Hold fingeren på et tomt sted på Hjem-skjermen til appene begynner å riste.", "Trykk på Rediger (eller +) øverst til venstre, og deretter Legg til widget.", "Søk etter Christmas, velg en størrelse og trykk på Legg til widget."],
+    lock: "Låseskjerm: hold fingeren på låseskjermen, trykk på Tilpass → Låseskjerm, og trykk på widgetområdet.",
   },
   gifts: {
     title: "Gaveliste",

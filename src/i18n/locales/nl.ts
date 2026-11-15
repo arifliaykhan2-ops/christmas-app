@@ -169,6 +169,15 @@ const nl: Strings = {
     nothing: "Geen eerdere aankopen gevonden.",
     unavailable: "Aankopen zijn nu niet beschikbaar. Probeer het later opnieuw.",
     error: "Er ging iets mis. Probeer het opnieuw.",
+    addPhoto: "Voeg je foto toe",
+    keepTitle: "Ziet er geweldig uit! Ontgrendel Premium om je foto te houden.",
+    keep: "Foto houden",
+  },
+  widget: {
+    title: "Aftelwidget",
+    cta: "Zet het aftellen op je beginscherm",
+    steps: ["Houd een lege plek op je beginscherm ingedrukt tot de apps gaan wiebelen.", "Tik linksboven op Wijzig (of +) en daarna op Voeg widget toe.", "Zoek naar Christmas, kies een formaat en tik op Voeg widget toe."],
+    lock: "Toegangsscherm: houd het toegangsscherm ingedrukt, tik op Pas aan → Toegangsscherm en tik op het widgetgebied.",
   },
   gifts: {
     title: "Cadeaulijst",

@@ -169,6 +169,15 @@ const zhHant: Strings = {
     nothing: "找不到先前的購買項目。",
     unavailable: "目前無法購買，請稍後再試。",
     error: "發生錯誤，請再試一次。",
+    addPhoto: "加入你的照片",
+    keepTitle: "超好看！解鎖 Premium 就能保留照片。",
+    keep: "保留我的照片",
+  },
+  widget: {
+    title: "倒數小工具",
+    cta: "把倒數放到主畫面",
+    steps: ["在主畫面的空白處按住不放，直到 App 開始晃動。", "點一下左上角的「編輯」（或＋），再點「加入小工具」。", "搜尋「Christmas」，選擇尺寸後點「加入小工具」。"],
+    lock: "鎖定畫面：按住鎖定畫面，點「自訂」→「鎖定畫面」，再點小工具區域。",
   },
   gifts: {
     title: "禮物清單",

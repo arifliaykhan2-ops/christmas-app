@@ -39,6 +39,7 @@ function seeds(lang, d, shot) {
     'app.lang': lang,
     'app.currency': d.currency,
     'settings.onboarded': 'true',
+    'paywall.intro': 'true',
     'settings.mode': '"dec25"',
     'settings.snow': 'false',
     'advent.opened': JSON.stringify(Array.from({ length: 17 }, (_, i) => i + 1)),

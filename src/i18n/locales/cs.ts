@@ -169,6 +169,15 @@ const cs: Strings = {
     nothing: "Nebyly nalezeny žádné předchozí nákupy.",
     unavailable: "Nákupy teď nejsou dostupné. Zkus to později.",
     error: "Něco se pokazilo. Zkus to znovu.",
+    addPhoto: "Přidej svou fotku",
+    keepTitle: "Vypadá to skvěle! Odemkni Premium a fotka ti zůstane.",
+    keep: "Ponechat fotku",
+  },
+  widget: {
+    title: "Widget odpočtu",
+    cta: "Dej si odpočet na plochu",
+    steps: ["Podrž prst na prázdném místě plochy, dokud se aplikace nezačnou třást.", "Klepni vlevo nahoře na Upravit (nebo +) a pak na Přidat widget.", "Vyhledej Christmas, vyber velikost a klepni na Přidat widget."],
+    lock: "Zamčená obrazovka: podrž prst na zamčené obrazovce, klepni na Přizpůsobit → Zamčená obrazovka a pak na oblast widgetů.",
   },
   gifts: {
     title: "Seznam dárků",

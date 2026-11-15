@@ -169,6 +169,15 @@ const vi: Strings = {
     nothing: "Không tìm thấy giao dịch mua trước đó.",
     unavailable: "Hiện không thể mua. Vui lòng thử lại sau.",
     error: "Đã xảy ra lỗi. Vui lòng thử lại.",
+    addPhoto: "Thêm ảnh của bạn",
+    keepTitle: "Đẹp quá! Mở khóa Premium để giữ ảnh của bạn.",
+    keep: "Giữ ảnh của tôi",
+  },
+  widget: {
+    title: "Tiện ích đếm ngược",
+    cta: "Đặt đếm ngược lên Màn hình chính",
+    steps: ["Chạm và giữ một chỗ trống trên Màn hình chính cho đến khi các ứng dụng rung.", "Chạm Sửa (hoặc +) ở góc trên bên trái, rồi chạm Thêm tiện ích.", "Tìm Christmas, chọn kích thước và chạm Thêm tiện ích."],
+    lock: "Màn hình khóa: chạm và giữ Màn hình khóa, chạm Tùy chỉnh → Màn hình khóa, rồi chạm vùng tiện ích.",
   },
   gifts: {
     title: "Danh sách quà",

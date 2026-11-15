@@ -86,12 +86,18 @@ export default function SettingsScreen() {
           </View>
         </Card>
 
-        <Card>
-          <View style={st.row}>
-            <Icon name="tree" size={40} />
-            <P style={{ flex: 1, fontSize: 14 }}>{s.widgets}</P>
-          </View>
-        </Card>
+        <Pressable onPress={() => router.push('/widget')} style={({ pressed }) => pressed && { opacity: 0.7 }}>
+          <Card>
+            <View style={st.row}>
+              <Icon name="tree" size={40} />
+              <View style={{ flex: 1, gap: 2 }}>
+                <Label style={{ fontSize: 16, color: colors.white }}>{strings.widget.title}</Label>
+                <P muted style={{ fontSize: 14 }}>{strings.widget.cta}</P>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+            </View>
+          </Card>
+        </Pressable>
 
         <View style={{ gap: 4 }}>
           <Label>{s.credits}</Label>

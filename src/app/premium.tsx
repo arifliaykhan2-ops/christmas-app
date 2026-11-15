@@ -1,3 +1,4 @@
+import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
 import { useEffect, useState } from 'react';
@@ -6,6 +7,7 @@ import { Accent, Button, Card, H1, Icon, ModalHeader, P, Scene, TextButton } fro
 import { fmt, strings, useI18nVersion } from '@/i18n';
 import { IS_EXPO_GO, TERMS_URL, clearTestPurchase, loadOffer, manageSubscription, restore, subscribe, usePremium, type Offer } from '@/lib/premium';
 import type { Icon3D } from '@/lib/assets';
+import { useSettings } from '@/lib/settings';
 import { colors, fonts, radius, weights } from '@/lib/theme';
 
 /** Paywall: 7-day free trial, then the monthly price — all prices come from the App Store. */
@@ -13,6 +15,7 @@ export default function PremiumScreen() {
   useI18nVersion();
   const s = strings.premium;
   const premium = usePremium();
+  const { previewPhoto } = useSettings();
   const [offer, setOffer] = useState<Offer | null | undefined>(undefined);
   const [busy, setBusy] = useState(false);
 
@@ -53,11 +56,20 @@ export default function PremiumScreen() {
   return (
     <Scene contentStyle={{ paddingTop: 30 }}>
       <ModalHeader doneLabel={strings.common.close} onDone={() => router.back()} />
-      <View style={st.art}>
-        <Icon name="gift" size={86} style={{ transform: [{ rotate: '-12deg' }] }} />
-        <Icon name="santa" size={140} float />
-        <Icon name="star" size={70} style={{ transform: [{ rotate: '14deg' }] }} />
-      </View>
+      {previewPhoto ? (
+        // The photo they just tried: what they keep by subscribing.
+        <View style={st.art}>
+          <Icon name="gift" size={70} style={{ transform: [{ rotate: '-12deg' }] }} />
+          <Image source={{ uri: previewPhoto }} style={st.photo} contentFit="cover" />
+          <Icon name="star" size={60} style={{ transform: [{ rotate: '14deg' }] }} />
+        </View>
+      ) : (
+        <View style={st.art}>
+          <Icon name="gift" size={86} style={{ transform: [{ rotate: '-12deg' }] }} />
+          <Icon name="santa" size={140} float />
+          <Icon name="star" size={70} style={{ transform: [{ rotate: '14deg' }] }} />
+        </View>
+      )}
 
       <View style={{ alignItems: 'center', gap: 6 }}>
         <H1 style={{ textAlign: 'center', fontSize: 34 }}>{s.title}</H1>
@@ -111,6 +123,7 @@ export default function PremiumScreen() {
 }
 
 const st = StyleSheet.create({
+  photo: { width: 150, height: 188, borderRadius: radius.md, borderWidth: 3, borderColor: colors.yellow },
   art: { flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center', gap: 4 },
   benefit: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   benefitIcon: { width: 52, height: 52, borderRadius: radius.sm, backgroundColor: 'rgba(8,42,21,0.45)', alignItems: 'center', justifyContent: 'center' },

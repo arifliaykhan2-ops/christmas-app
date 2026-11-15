@@ -169,6 +169,15 @@ const pl: Strings = {
     nothing: "Nie znaleziono wcześniejszych zakupów.",
     unavailable: "Zakupy są teraz niedostępne. Spróbuj ponownie później.",
     error: "Coś poszło nie tak. Spróbuj ponownie.",
+    addPhoto: "Dodaj swoje zdjęcie",
+    keepTitle: "Wygląda świetnie! Odblokuj Premium, aby zachować zdjęcie.",
+    keep: "Zachowaj zdjęcie",
+  },
+  widget: {
+    title: "Widżet odliczania",
+    cta: "Dodaj odliczanie do ekranu początkowego",
+    steps: ["Przytrzymaj puste miejsce na ekranie początkowym, aż aplikacje zaczną drgać.", "Stuknij Edycja (lub +) w lewym górnym rogu, a potem Dodaj widżet.", "Wyszukaj Christmas, wybierz rozmiar i stuknij Dodaj widżet."],
+    lock: "Ekran blokady: przytrzymaj ekran blokady, stuknij Dostosuj → Ekran blokady, a potem obszar widżetów.",
   },
   gifts: {
     title: "Lista prezentów",

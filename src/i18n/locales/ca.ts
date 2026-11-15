@@ -169,6 +169,15 @@ const ca: Strings = {
     nothing: "No s’ha trobat cap compra anterior.",
     unavailable: "Les compres no estan disponibles ara mateix. Torna-ho a provar més tard.",
     error: "Alguna cosa ha fallat. Torna-ho a provar.",
+    addPhoto: "Afegeix la teva foto",
+    keepTitle: "Queda genial! Desbloqueja Premium per conservar la foto.",
+    keep: "Conservar la foto",
+  },
+  widget: {
+    title: "Giny del compte enrere",
+    cta: "Posa el compte enrere a la pantalla d’inici",
+    steps: ["Mantén premut un espai buit de la pantalla d’inici fins que les apps es moguin.", "Toca Edita (o +) a dalt a l’esquerra i després Afegeix un giny.", "Cerca Christmas, tria una mida i toca Afegeix el giny."],
+    lock: "Pantalla bloquejada: mantén premuda la pantalla bloquejada, toca Personalitza → Pantalla bloquejada i després la zona de ginys.",
   },
   gifts: {
     title: "Llista de regals",

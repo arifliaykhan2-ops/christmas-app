@@ -169,6 +169,15 @@ const hr: Strings = {
     nothing: "Nisu pronađene prethodne kupnje.",
     unavailable: "Kupnje trenutačno nisu dostupne. Pokušaj kasnije.",
     error: "Nešto nije u redu. Pokušaj ponovno.",
+    addPhoto: "Dodaj svoju fotku",
+    keepTitle: "Izgleda sjajno! Otključaj Premium da zadržiš fotku.",
+    keep: "Zadrži fotku",
+  },
+  widget: {
+    title: "Widget odbrojavanja",
+    cta: "Stavi odbrojavanje na početni zaslon",
+    steps: ["Zadrži prst na praznom mjestu početnog zaslona dok se aplikacije ne počnu tresti.", "Dodirni Uredi (ili +) u gornjem lijevom kutu, zatim Dodaj widget.", "Potraži Christmas, odaberi veličinu i dodirni Dodaj widget."],
+    lock: "Zaključani zaslon: zadrži prst na zaključanom zaslonu, dodirni Prilagodi → Zaključani zaslon, zatim područje widgeta.",
   },
   gifts: {
     title: "Popis darova",

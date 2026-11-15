@@ -169,6 +169,15 @@ const sv: Strings = {
     nothing: "Inga tidigare köp hittades.",
     unavailable: "Köp är inte tillgängliga just nu. Försök igen senare.",
     error: "Något gick fel. Försök igen.",
+    addPhoto: "Lägg till ditt foto",
+    keepTitle: "Ser fantastiskt ut! Lås upp Premium för att behålla ditt foto.",
+    keep: "Behåll mitt foto",
+  },
+  widget: {
+    title: "Nedräkningswidget",
+    cta: "Lägg nedräkningen på hemskärmen",
+    steps: ["Håll ned fingret på en tom plats på hemskärmen tills apparna skakar.", "Tryck på Redigera (eller +) uppe till vänster och sedan Lägg till widget.", "Sök efter Christmas, välj en storlek och tryck på Lägg till widget."],
+    lock: "Låsskärm: håll ned fingret på låsskärmen, tryck på Anpassa → Låsskärm och tryck sedan på widgetområdet.",
   },
   gifts: {
     title: "Julklappslista",

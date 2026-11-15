@@ -169,6 +169,15 @@ const fi: Strings = {
     nothing: "Aiempia ostoja ei löytynyt.",
     unavailable: "Ostot eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.",
     error: "Jokin meni vikaan. Yritä uudelleen.",
+    addPhoto: "Lisää oma kuva",
+    keepTitle: "Näyttää upealta! Avaa Premium, niin kuva jää.",
+    keep: "Pidä kuva",
+  },
+  widget: {
+    title: "Laskuriwidget",
+    cta: "Lisää laskuri Koti-valikkoon",
+    steps: ["Pidä sormea tyhjässä kohdassa Koti-valikossa, kunnes apit alkavat heilua.", "Napauta vasemmasta yläkulmasta Muokkaa (tai +) ja sitten Lisää widget.", "Hae Christmas, valitse koko ja napauta Lisää widget."],
+    lock: "Lukitusnäyttö: pidä sormea lukitusnäytöllä, napauta Muokkaa → Lukitusnäyttö ja napauta widgetaluetta.",
   },
   gifts: {
     title: "Lahjalista",

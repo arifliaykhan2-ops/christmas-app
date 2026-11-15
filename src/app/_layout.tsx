@@ -36,6 +36,7 @@ function RootStack() {
         <Stack.Screen name="picker" options={{ presentation: 'modal' }} />
         <Stack.Screen name="premium" options={{ presentation: 'modal' }} />
         <Stack.Screen name="customize" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="widget" options={{ presentation: 'modal' }} />
         <Stack.Screen name="door/[day]" options={{ presentation: 'modal' }} />
         <Stack.Screen name="game/[kind]" options={{ presentation: 'fullScreenModal' }} />
       </Stack.Protected>

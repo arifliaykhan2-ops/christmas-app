@@ -169,6 +169,15 @@ const id: Strings = {
     nothing: "Tidak ada pembelian sebelumnya.",
     unavailable: "Pembelian sedang tidak tersedia. Coba lagi nanti.",
     error: "Terjadi kesalahan. Coba lagi.",
+    addPhoto: "Tambah fotomu",
+    keepTitle: "Keren banget! Buka Premium agar fotomu tetap terpasang.",
+    keep: "Simpan fotoku",
+  },
+  widget: {
+    title: "Widget hitung mundur",
+    cta: "Pasang hitung mundur di Layar Utama",
+    steps: ["Sentuh dan tahan area kosong di Layar Utama sampai apl bergoyang.", "Ketuk Edit (atau +) di kiri atas, lalu Tambah Widget.", "Cari Christmas, pilih ukuran, lalu ketuk Tambah Widget."],
+    lock: "Layar Terkunci: sentuh dan tahan Layar Terkunci, ketuk Sesuaikan → Layar Terkunci, lalu ketuk area widget.",
   },
   gifts: {
     title: "Daftar hadiah",

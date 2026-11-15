@@ -169,6 +169,15 @@ const da: Strings = {
     nothing: "Ingen tidligere køb fundet.",
     unavailable: "Køb er ikke tilgængelige lige nu. Prøv igen senere.",
     error: "Noget gik galt. Prøv igen.",
+    addPhoto: "Tilføj dit foto",
+    keepTitle: "Det ser fantastisk ud! Lås Premium op for at beholde dit foto.",
+    keep: "Behold mit foto",
+  },
+  widget: {
+    title: "Nedtællingswidget",
+    cta: "Sæt nedtællingen på din hjemmeskærm",
+    steps: ["Hold fingeren på et tomt sted på hjemmeskærmen, til apps begynder at vrikke.", "Tryk på Rediger (eller +) øverst til venstre og derefter Tilføj widget.", "Søg efter Christmas, vælg en størrelse, og tryk på Tilføj widget."],
+    lock: "Låseskærm: hold fingeren på låseskærmen, tryk på Tilpas → Låseskærm, og tryk på widgetområdet.",
   },
   gifts: {
     title: "Gaveliste",

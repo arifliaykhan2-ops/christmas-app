@@ -169,6 +169,15 @@ const es: Strings = {
     nothing: "No se encontraron compras anteriores.",
     unavailable: "Las compras no están disponibles ahora. Inténtalo más tarde.",
     error: "Algo salió mal. Inténtalo de nuevo.",
+    addPhoto: "Añade tu foto",
+    keepTitle: "¡Queda genial! Desbloquea Premium para conservar tu foto.",
+    keep: "Conservar mi foto",
+  },
+  widget: {
+    title: "Widget de cuenta atrás",
+    cta: "Pon la cuenta atrás en tu pantalla de inicio",
+    steps: ["Mantén pulsado un espacio vacío de la pantalla de inicio hasta que las apps se muevan.", "Toca Editar (o +) arriba a la izquierda y luego Añadir widget.", "Busca Christmas, elige un tamaño y toca Añadir widget."],
+    lock: "Pantalla bloqueada: mantén pulsada la pantalla bloqueada, toca Personalizar → Pantalla bloqueada y luego la zona de widgets.",
   },
   gifts: {
     title: "Lista de regalos",

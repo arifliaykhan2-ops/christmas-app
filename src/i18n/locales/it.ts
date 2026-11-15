@@ -169,6 +169,15 @@ const it: Strings = {
     nothing: "Nessun acquisto precedente trovato.",
     unavailable: "Gli acquisti non sono disponibili al momento. Riprova più tardi.",
     error: "Si è verificato un errore. Riprova.",
+    addPhoto: "Aggiungi la tua foto",
+    keepTitle: "Bellissima! Sblocca Premium per tenere la tua foto.",
+    keep: "Tieni la mia foto",
+  },
+  widget: {
+    title: "Widget del conto alla rovescia",
+    cta: "Metti il conto alla rovescia nella schermata Home",
+    steps: ["Tieni premuto un punto vuoto della schermata Home finché le app tremano.", "Tocca Modifica (o +) in alto a sinistra, poi Aggiungi widget.", "Cerca Christmas, scegli una dimensione e tocca Aggiungi widget."],
+    lock: "Schermata di blocco: tieni premuta la schermata di blocco, tocca Personalizza → Schermata di blocco, poi l’area dei widget.",
   },
   gifts: {
     title: "Lista dei regali",
