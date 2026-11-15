@@ -1,4 +1,4 @@
-# Christmas Countdown: Advent — App Store təlimatı
+# Christmas Countdown – Widget — App Store təlimatı
 
 ## Ümumi (bütün dillər)
 

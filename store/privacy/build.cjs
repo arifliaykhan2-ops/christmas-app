@@ -38,7 +38,7 @@ const options = langs.map((l) => `<option value="${l}">${esc(PRIVACY[l].title)} 
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Christmas Countdown: Advent — Privacy Policy</title>
+<title>Christmas Countdown – Widget — Privacy Policy</title>
 <style>
 :root{color-scheme:light dark}
 body{margin:0;font-family:-apple-system,system-ui,"Segoe UI",sans-serif;line-height:1.6;background:#0d3a1f;color:#fff}
@@ -52,7 +52,7 @@ h2{margin:1.6em 0 .3em;font-size:1.15em;color:#f5c84c}
 a{color:#f5c84c}
 .js section{display:none}.js section.on{display:block}
 </style></head><body><main>
-<header><span class="brand">🎄 Christmas Countdown: Advent</span><select id="pick" aria-label="Language">${options}</select></header>
+<header><span class="brand">🎄 Christmas Countdown – Widget</span><select id="pick" aria-label="Language">${options}</select></header>
 ${sections}
 </main>
 <script>

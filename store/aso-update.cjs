@@ -11,7 +11,7 @@ const L = JSON.parse(fs.readFileSync(file, 'utf8'));
 const EULA = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
 
 const SUB = {
-  en: 'Widget, Secret Santa & Gifts', fr: 'Widget et Père Noël secret', de: 'Widget, Wichteln & Geschenke', it: 'Widget, regali e Babbo segreto',
+  en: 'Advent Calendar & Secret Santa', fr: 'Widget et Père Noël secret', de: 'Widget, Wichteln & Geschenke', it: 'Widget, regali e Babbo segreto',
   es: 'Widget y amigo invisible', pt: 'Widget e amigo secreto', nl: 'Widget, lootjes en cadeaus', da: 'Widget, nisse og gaveliste',
   sv: 'Widget, julklappslek & listor', nb: 'Widget, nisse og gaveliste', fi: 'Widget, lahjat ja arvonta', pl: 'Widżet, Mikołajki i prezenty',
   cs: 'Widget, Ježíšek a dárky', sk: 'Widget, Ježiško a darčeky', hu: 'Widget, angyalka és ajándék', ro: 'Widget, Moș secret și cadouri',

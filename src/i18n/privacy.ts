@@ -12,7 +12,7 @@ export type Policy = { title: string; updated: string; intro: string; s: [string
 
 export const PRIVACY: Record<Lang, Policy> = {
   en: {
-    title: 'Privacy Policy', updated: 'Last updated', intro: 'Christmas Countdown: Advent works without an account and without ads. We do not collect, sell or share your personal information.',
+    title: 'Privacy Policy', updated: 'Last updated', intro: 'Christmas Countdown – Widget works without an account and without ads. We do not collect, sell or share your personal information.',
     s: [
       ['Stored only on your iPhone', 'Your countdown settings, opened Advent doors, Secret Santa names and draws, gift lists, budgets and reminders are saved only on your device. They are never sent to us. Deleting the app deletes them.'],
       ['Photos', 'If you choose your own photo, the app can see only the photo you pick. A copy is kept on your iPhone for the countdown and the widget and is never uploaded. You can remove it at any time in the app.'],
@@ -25,7 +25,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   fr: {
-    title: 'Politique de confidentialité', updated: 'Dernière mise à jour', intro: 'Christmas Countdown: Advent fonctionne sans compte et sans publicité. Nous ne collectons, ne vendons ni ne partageons vos données personnelles.',
+    title: 'Politique de confidentialité', updated: 'Dernière mise à jour', intro: 'Christmas Countdown – Widget fonctionne sans compte et sans publicité. Nous ne collectons, ne vendons ni ne partageons vos données personnelles.',
     s: [
       ['Stocké uniquement sur votre iPhone', 'Vos réglages de compte à rebours, les cases de l’Avent ouvertes, les noms et tirages du Père Noël secret, les listes de cadeaux, les budgets et les rappels restent sur votre appareil. Ils ne nous sont jamais envoyés. Supprimer l’app les supprime.'],
       ['Photos', 'Si vous choisissez votre propre photo, l’app n’accède qu’à cette photo. Une copie est conservée sur votre iPhone pour le compte à rebours et le widget, sans jamais être envoyée. Vous pouvez la retirer à tout moment dans l’app.'],
@@ -38,7 +38,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   de: {
-    title: 'Datenschutzerklärung', updated: 'Zuletzt aktualisiert', intro: 'Christmas Countdown: Advent funktioniert ohne Konto und ohne Werbung. Wir erheben, verkaufen und teilen keine personenbezogenen Daten.',
+    title: 'Datenschutzerklärung', updated: 'Zuletzt aktualisiert', intro: 'Christmas Countdown – Widget funktioniert ohne Konto und ohne Werbung. Wir erheben, verkaufen und teilen keine personenbezogenen Daten.',
     s: [
       ['Nur auf deinem iPhone gespeichert', 'Countdown-Einstellungen, geöffnete Adventstürchen, Wichtel-Namen und Auslosungen, Geschenklisten, Budgets und Erinnerungen bleiben auf deinem Gerät. Sie werden nie an uns gesendet. Wenn du die App löschst, werden sie gelöscht.'],
       ['Fotos', 'Wählst du ein eigenes Foto, sieht die App nur dieses eine Foto. Eine Kopie bleibt für Countdown und Widget auf deinem iPhone und wird nie hochgeladen. Du kannst sie jederzeit in der App entfernen.'],
@@ -51,7 +51,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   it: {
-    title: 'Informativa sulla privacy', updated: 'Ultimo aggiornamento', intro: 'Christmas Countdown: Advent funziona senza account e senza pubblicità. Non raccogliamo, vendiamo né condividiamo i tuoi dati personali.',
+    title: 'Informativa sulla privacy', updated: 'Ultimo aggiornamento', intro: 'Christmas Countdown – Widget funziona senza account e senza pubblicità. Non raccogliamo, vendiamo né condividiamo i tuoi dati personali.',
     s: [
       ['Salvato solo sul tuo iPhone', 'Impostazioni del conto alla rovescia, caselle dell’Avvento aperte, nomi ed estrazioni del Babbo Natale segreto, liste regali, budget e promemoria restano sul tuo dispositivo. Non ci vengono mai inviati. Eliminando l’app vengono eliminati.'],
       ['Foto', 'Se scegli una tua foto, l’app vede solo quella foto. Una copia resta sul tuo iPhone per il conto alla rovescia e il widget e non viene mai caricata. Puoi rimuoverla in qualsiasi momento nell’app.'],
@@ -64,7 +64,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   es: {
-    title: 'Política de privacidad', updated: 'Última actualización', intro: 'Christmas Countdown: Advent funciona sin cuenta y sin anuncios. No recopilamos, vendemos ni compartimos tus datos personales.',
+    title: 'Política de privacidad', updated: 'Última actualización', intro: 'Christmas Countdown – Widget funciona sin cuenta y sin anuncios. No recopilamos, vendemos ni compartimos tus datos personales.',
     s: [
       ['Guardado solo en tu iPhone', 'Los ajustes de la cuenta atrás, las puertas del Adviento abiertas, los nombres y sorteos del amigo invisible, las listas de regalos, los presupuestos y los recordatorios se guardan solo en tu dispositivo. Nunca se nos envían. Al eliminar la app se eliminan.'],
       ['Fotos', 'Si eliges tu propia foto, la app solo ve esa foto. Se guarda una copia en tu iPhone para la cuenta atrás y el widget, y nunca se sube. Puedes quitarla cuando quieras en la app.'],
@@ -77,7 +77,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   pt: {
-    title: 'Política de Privacidade', updated: 'Última atualização', intro: 'Christmas Countdown: Advent funciona sem conta e sem anúncios. Não coletamos, vendemos nem compartilhamos seus dados pessoais.',
+    title: 'Política de Privacidade', updated: 'Última atualização', intro: 'Christmas Countdown – Widget funciona sem conta e sem anúncios. Não coletamos, vendemos nem compartilhamos seus dados pessoais.',
     s: [
       ['Salvo apenas no seu iPhone', 'As configurações da contagem regressiva, as portas do Advento abertas, os nomes e sorteios do amigo secreto, as listas de presentes, os orçamentos e os lembretes ficam só no seu aparelho. Nunca são enviados para nós. Ao apagar o app, eles são apagados.'],
       ['Fotos', 'Se você escolher sua própria foto, o app vê apenas essa foto. Uma cópia fica no seu iPhone para a contagem e o widget e nunca é enviada. Você pode removê-la a qualquer momento no app.'],
@@ -90,7 +90,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   nl: {
-    title: 'Privacybeleid', updated: 'Laatst bijgewerkt', intro: 'Christmas Countdown: Advent werkt zonder account en zonder advertenties. We verzamelen, verkopen en delen geen persoonsgegevens.',
+    title: 'Privacybeleid', updated: 'Laatst bijgewerkt', intro: 'Christmas Countdown – Widget werkt zonder account en zonder advertenties. We verzamelen, verkopen en delen geen persoonsgegevens.',
     s: [
       ['Alleen op je iPhone opgeslagen', 'Je aftelinstellingen, geopende adventsdeurtjes, namen en trekkingen van lootjes, cadeaulijsten, budgetten en herinneringen blijven op je apparaat. Ze worden nooit naar ons gestuurd. Als je de app verwijdert, worden ze verwijderd.'],
       ['Foto’s', 'Kies je een eigen foto, dan ziet de app alleen die foto. Een kopie blijft op je iPhone voor het aftellen en de widget en wordt nooit geüpload. Je kunt hem altijd in de app verwijderen.'],
@@ -103,7 +103,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   da: {
-    title: 'Privatlivspolitik', updated: 'Sidst opdateret', intro: 'Christmas Countdown: Advent virker uden konto og uden reklamer. Vi indsamler, sælger og deler ikke dine personoplysninger.',
+    title: 'Privatlivspolitik', updated: 'Sidst opdateret', intro: 'Christmas Countdown – Widget virker uden konto og uden reklamer. Vi indsamler, sælger og deler ikke dine personoplysninger.',
     s: [
       ['Kun gemt på din iPhone', 'Dine nedtællingsindstillinger, åbnede julekalenderlåger, navne og lodtrækninger til nissegaver, gavelister, budgetter og påmindelser gemmes kun på din enhed. De sendes aldrig til os. Sletter du appen, slettes de.'],
       ['Fotos', 'Vælger du dit eget foto, kan appen kun se det foto. En kopi gemmes på din iPhone til nedtællingen og widgetten og uploades aldrig. Du kan til enhver tid fjerne det i appen.'],
@@ -116,7 +116,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   sv: {
-    title: 'Integritetspolicy', updated: 'Senast uppdaterad', intro: 'Christmas Countdown: Advent fungerar utan konto och utan reklam. Vi samlar inte in, säljer eller delar dina personuppgifter.',
+    title: 'Integritetspolicy', updated: 'Senast uppdaterad', intro: 'Christmas Countdown – Widget fungerar utan konto och utan reklam. Vi samlar inte in, säljer eller delar dina personuppgifter.',
     s: [
       ['Sparas bara på din iPhone', 'Dina nedräkningsinställningar, öppnade luckor i adventskalendern, namn och dragningar i julklappsleken, önskelistor, budgetar och påminnelser sparas bara på din enhet. De skickas aldrig till oss. Tar du bort appen raderas de.'],
       ['Foton', 'Väljer du ett eget foto kan appen bara se det fotot. En kopia sparas på din iPhone för nedräkningen och widgeten och laddas aldrig upp. Du kan ta bort den när som helst i appen.'],
@@ -129,7 +129,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   nb: {
-    title: 'Personvernerklæring', updated: 'Sist oppdatert', intro: 'Christmas Countdown: Advent fungerer uten konto og uten reklame. Vi samler ikke inn, selger eller deler personopplysningene dine.',
+    title: 'Personvernerklæring', updated: 'Sist oppdatert', intro: 'Christmas Countdown – Widget fungerer uten konto og uten reklame. Vi samler ikke inn, selger eller deler personopplysningene dine.',
     s: [
       ['Lagres bare på iPhonen din', 'Nedtellingsinnstillinger, åpnede luker i julekalenderen, navn og trekninger til nissegaver, gavelister, budsjetter og påminnelser lagres bare på enheten din. De sendes aldri til oss. Sletter du appen, slettes de.'],
       ['Bilder', 'Velger du ditt eget bilde, ser appen bare det bildet. En kopi lagres på iPhonen for nedtellingen og widgeten og lastes aldri opp. Du kan fjerne det når som helst i appen.'],
@@ -142,7 +142,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   fi: {
-    title: 'Tietosuojakäytäntö', updated: 'Päivitetty viimeksi', intro: 'Christmas Countdown: Advent toimii ilman tiliä ja ilman mainoksia. Emme kerää, myy tai jaa henkilötietojasi.',
+    title: 'Tietosuojakäytäntö', updated: 'Päivitetty viimeksi', intro: 'Christmas Countdown – Widget toimii ilman tiliä ja ilman mainoksia. Emme kerää, myy tai jaa henkilötietojasi.',
     s: [
       ['Tallennetaan vain iPhoneesi', 'Laskurin asetukset, avatut joulukalenterin luukut, lahja-arvonnan nimet ja arvonnat, lahjalistat, budjetit ja muistutukset tallentuvat vain laitteellesi. Niitä ei koskaan lähetetä meille. Kun poistat apin, ne poistuvat.'],
       ['Kuvat', 'Jos valitset oman kuvan, appi näkee vain sen kuvan. Kopio säilyy iPhonessasi laskuria ja widgetiä varten, eikä sitä koskaan ladata palvelimelle. Voit poistaa sen milloin tahansa apissa.'],
@@ -155,7 +155,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   pl: {
-    title: 'Polityka prywatności', updated: 'Ostatnia aktualizacja', intro: 'Christmas Countdown: Advent działa bez konta i bez reklam. Nie zbieramy, nie sprzedajemy ani nie udostępniamy Twoich danych osobowych.',
+    title: 'Polityka prywatności', updated: 'Ostatnia aktualizacja', intro: 'Christmas Countdown – Widget działa bez konta i bez reklam. Nie zbieramy, nie sprzedajemy ani nie udostępniamy Twoich danych osobowych.',
     s: [
       ['Zapisywane tylko na Twoim iPhonie', 'Ustawienia odliczania, otwarte okienka kalendarza adwentowego, imiona i losowania Mikołajek, listy prezentów, budżety i przypomnienia są zapisywane tylko na Twoim urządzeniu. Nigdy nie są do nas wysyłane. Usunięcie aplikacji je usuwa.'],
       ['Zdjęcia', 'Jeśli wybierzesz własne zdjęcie, aplikacja widzi tylko to zdjęcie. Kopia zostaje na iPhonie na potrzeby odliczania i widżetu i nigdy nie jest wysyłana. Możesz ją usunąć w aplikacji w dowolnej chwili.'],
@@ -168,7 +168,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   cs: {
-    title: 'Zásady ochrany soukromí', updated: 'Naposledy aktualizováno', intro: 'Christmas Countdown: Advent funguje bez účtu a bez reklam. Vaše osobní údaje neshromažďujeme, neprodáváme ani nesdílíme.',
+    title: 'Zásady ochrany soukromí', updated: 'Naposledy aktualizováno', intro: 'Christmas Countdown – Widget funguje bez účtu a bez reklam. Vaše osobní údaje neshromažďujeme, neprodáváme ani nesdílíme.',
     s: [
       ['Uloženo jen ve vašem iPhonu', 'Nastavení odpočtu, otevřená okénka adventního kalendáře, jména a losování Ježíška, seznamy dárků, rozpočty a připomínky se ukládají jen ve vašem zařízení. Nikdy nám nejsou odeslány. Smazáním aplikace se smažou.'],
       ['Fotky', 'Pokud vyberete vlastní fotku, aplikace vidí jen tuto fotku. Kopie zůstává v iPhonu pro odpočet a widget a nikdy se nenahrává. Kdykoli ji můžete v aplikaci odstranit.'],
@@ -181,7 +181,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   sk: {
-    title: 'Zásady ochrany súkromia', updated: 'Naposledy aktualizované', intro: 'Christmas Countdown: Advent funguje bez účtu a bez reklám. Vaše osobné údaje nezhromažďujeme, nepredávame ani nezdieľame.',
+    title: 'Zásady ochrany súkromia', updated: 'Naposledy aktualizované', intro: 'Christmas Countdown – Widget funguje bez účtu a bez reklám. Vaše osobné údaje nezhromažďujeme, nepredávame ani nezdieľame.',
     s: [
       ['Uložené len vo vašom iPhone', 'Nastavenia odpočítavania, otvorené okienka adventného kalendára, mená a žrebovania Ježiška, zoznamy darčekov, rozpočty a pripomienky sa ukladajú len vo vašom zariadení. Nikdy nám nie sú odoslané. Vymazaním aplikácie sa vymažú.'],
       ['Fotky', 'Ak vyberiete vlastnú fotku, aplikácia vidí len túto fotku. Kópia zostáva v iPhone pre odpočítavanie a widget a nikdy sa nenahráva. Kedykoľvek ju môžete v aplikácii odstrániť.'],
@@ -194,7 +194,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   hu: {
-    title: 'Adatvédelmi irányelvek', updated: 'Utolsó frissítés', intro: 'A Christmas Countdown: Advent fiók és reklám nélkül működik. Személyes adataidat nem gyűjtjük, nem adjuk el és nem osztjuk meg.',
+    title: 'Adatvédelmi irányelvek', updated: 'Utolsó frissítés', intro: 'A Christmas Countdown – Widget fiók és reklám nélkül működik. Személyes adataidat nem gyűjtjük, nem adjuk el és nem osztjuk meg.',
     s: [
       ['Csak az iPhone-odon tárolva', 'A visszaszámláló beállításai, a kinyitott adventi ablakok, az angyalka nevei és sorsolásai, az ajándéklisták, a keretek és az emlékeztetők csak az eszközödön maradnak. Soha nem küldjük el nekünk. Az app törlésével törlődnek.'],
       ['Fotók', 'Ha saját fotót választasz, az app csak azt az egy fotót látja. Egy másolat az iPhone-odon marad a visszaszámlálóhoz és a widgethez, és soha nem kerül feltöltésre. Bármikor eltávolíthatod az appban.'],
@@ -207,7 +207,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ro: {
-    title: 'Politica de confidențialitate', updated: 'Ultima actualizare', intro: 'Christmas Countdown: Advent funcționează fără cont și fără reclame. Nu colectăm, nu vindem și nu partajăm datele tale personale.',
+    title: 'Politica de confidențialitate', updated: 'Ultima actualizare', intro: 'Christmas Countdown – Widget funcționează fără cont și fără reclame. Nu colectăm, nu vindem și nu partajăm datele tale personale.',
     s: [
       ['Salvat doar pe iPhone-ul tău', 'Setările numărătorii inverse, ferestrele de Advent deschise, numele și extragerile Moșului secret, listele de cadouri, bugetele și mementourile rămân doar pe dispozitivul tău. Nu ne sunt trimise niciodată. Ștergerea aplicației le șterge.'],
       ['Fotografii', 'Dacă alegi o fotografie proprie, aplicația vede doar acea fotografie. O copie rămâne pe iPhone pentru numărătoare și widget și nu este încărcată niciodată. O poți elimina oricând din aplicație.'],
@@ -220,7 +220,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   hr: {
-    title: 'Pravila privatnosti', updated: 'Zadnje ažurirano', intro: 'Christmas Countdown: Advent radi bez računa i bez oglasa. Ne prikupljamo, ne prodajemo i ne dijelimo vaše osobne podatke.',
+    title: 'Pravila privatnosti', updated: 'Zadnje ažurirano', intro: 'Christmas Countdown – Widget radi bez računa i bez oglasa. Ne prikupljamo, ne prodajemo i ne dijelimo vaše osobne podatke.',
     s: [
       ['Spremljeno samo na vašem iPhoneu', 'Postavke odbrojavanja, otvorena adventska vratašca, imena i izvlačenja tajnog Djeda Božićnjaka, popisi darova, budžeti i podsjetnici ostaju samo na vašem uređaju. Nikada nam se ne šalju. Brisanjem aplikacije brišu se.'],
       ['Fotografije', 'Ako odaberete vlastitu fotografiju, aplikacija vidi samo tu fotografiju. Kopija ostaje na iPhoneu za odbrojavanje i widget i nikada se ne prenosi. Možete je ukloniti u aplikaciji u bilo kojem trenutku.'],
@@ -233,7 +233,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   el: {
-    title: 'Πολιτική απορρήτου', updated: 'Τελευταία ενημέρωση', intro: 'Το Christmas Countdown: Advent λειτουργεί χωρίς λογαριασμό και χωρίς διαφημίσεις. Δεν συλλέγουμε, δεν πουλάμε και δεν μοιραζόμαστε τα προσωπικά σας δεδομένα.',
+    title: 'Πολιτική απορρήτου', updated: 'Τελευταία ενημέρωση', intro: 'Το Christmas Countdown – Widget λειτουργεί χωρίς λογαριασμό και χωρίς διαφημίσεις. Δεν συλλέγουμε, δεν πουλάμε και δεν μοιραζόμαστε τα προσωπικά σας δεδομένα.',
     s: [
       ['Αποθηκεύονται μόνο στο iPhone σας', 'Οι ρυθμίσεις αντίστροφης μέτρησης, τα ανοιγμένα παραθυράκια του Advent, τα ονόματα και οι κληρώσεις του Μυστικού Άγιου Βασίλη, οι λίστες δώρων, οι προϋπολογισμοί και οι υπενθυμίσεις μένουν μόνο στη συσκευή σας. Δεν μας αποστέλλονται ποτέ. Με τη διαγραφή της εφαρμογής διαγράφονται.'],
       ['Φωτογραφίες', 'Αν επιλέξετε δική σας φωτογραφία, η εφαρμογή βλέπει μόνο αυτήν. Ένα αντίγραφο μένει στο iPhone για την αντίστροφη μέτρηση και το widget και δεν ανεβαίνει ποτέ. Μπορείτε να το αφαιρέσετε οποιαδήποτε στιγμή από την εφαρμογή.'],
@@ -246,7 +246,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ru: {
-    title: 'Политика конфиденциальности', updated: 'Последнее обновление', intro: 'Christmas Countdown: Advent работает без аккаунта и без рекламы. Мы не собираем, не продаём и не передаём ваши персональные данные.',
+    title: 'Политика конфиденциальности', updated: 'Последнее обновление', intro: 'Christmas Countdown – Widget работает без аккаунта и без рекламы. Мы не собираем, не продаём и не передаём ваши персональные данные.',
     s: [
       ['Хранится только на вашем iPhone', 'Настройки отсчёта, открытые окошки адвент-календаря, имена и жеребьёвки Тайного Санты, списки подарков, бюджеты и напоминания хранятся только на вашем устройстве. Они никогда не отправляются нам. При удалении приложения они удаляются.'],
       ['Фото', 'Если вы выбираете своё фото, приложение видит только это фото. Копия хранится на iPhone для отсчёта и виджета и никуда не загружается. Удалить её можно в любой момент в приложении.'],
@@ -259,7 +259,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   uk: {
-    title: 'Політика конфіденційності', updated: 'Останнє оновлення', intro: 'Christmas Countdown: Advent працює без акаунта й без реклами. Ми не збираємо, не продаємо й не передаємо ваші персональні дані.',
+    title: 'Політика конфіденційності', updated: 'Останнє оновлення', intro: 'Christmas Countdown – Widget працює без акаунта й без реклами. Ми не збираємо, не продаємо й не передаємо ваші персональні дані.',
     s: [
       ['Зберігається лише на вашому iPhone', 'Налаштування відліку, відкриті віконця адвент-календаря, імена та жеребкування Таємного Санти, списки подарунків, бюджети й нагадування зберігаються лише на вашому пристрої. Вони ніколи не надсилаються нам. Після видалення застосунку вони видаляються.'],
       ['Фото', 'Якщо ви обираєте власне фото, застосунок бачить лише це фото. Копія зберігається на iPhone для відліку й віджета і ніколи не завантажується. Видалити її можна будь-коли в застосунку.'],
@@ -272,7 +272,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ca: {
-    title: 'Política de privadesa', updated: 'Última actualització', intro: 'Christmas Countdown: Advent funciona sense compte i sense anuncis. No recollim, venem ni compartim les teves dades personals.',
+    title: 'Política de privadesa', updated: 'Última actualització', intro: 'Christmas Countdown – Widget funciona sense compte i sense anuncis. No recollim, venem ni compartim les teves dades personals.',
     s: [
       ['Desat només al teu iPhone', 'Els ajustos del compte enrere, les portes de l’Advent obertes, els noms i sortejos de l’amic invisible, les llistes de regals, els pressupostos i els recordatoris es desen només al teu dispositiu. Mai no se’ns envien. En eliminar l’app s’eliminen.'],
       ['Fotos', 'Si tries la teva pròpia foto, l’app només veu aquesta foto. Se’n desa una còpia a l’iPhone per al compte enrere i el giny i mai no es puja. La pots treure quan vulguis des de l’app.'],
@@ -285,7 +285,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ko: {
-    title: '개인정보 처리방침', updated: '최종 업데이트', intro: 'Christmas Countdown: Advent는 계정과 광고 없이 작동합니다. 사용자의 개인정보를 수집, 판매 또는 공유하지 않습니다.',
+    title: '개인정보 처리방침', updated: '최종 업데이트', intro: 'Christmas Countdown – Widget는 계정과 광고 없이 작동합니다. 사용자의 개인정보를 수집, 판매 또는 공유하지 않습니다.',
     s: [
       ['iPhone에만 저장', '카운트다운 설정, 열어 본 어드벤트 문, 시크릿 산타 이름과 추첨 결과, 선물 목록, 예산, 알림은 기기에만 저장되며 저희에게 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.'],
       ['사진', '직접 사진을 고르면 앱은 선택한 사진만 볼 수 있습니다. 카운트다운과 위젯을 위해 iPhone에 사본이 보관되며 업로드되지 않습니다. 앱에서 언제든지 삭제할 수 있습니다.'],
@@ -298,7 +298,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   id: {
-    title: 'Kebijakan Privasi', updated: 'Terakhir diperbarui', intro: 'Christmas Countdown: Advent berfungsi tanpa akun dan tanpa iklan. Kami tidak mengumpulkan, menjual, atau membagikan data pribadi Anda.',
+    title: 'Kebijakan Privasi', updated: 'Terakhir diperbarui', intro: 'Christmas Countdown – Widget berfungsi tanpa akun dan tanpa iklan. Kami tidak mengumpulkan, menjual, atau membagikan data pribadi Anda.',
     s: [
       ['Hanya disimpan di iPhone Anda', 'Pengaturan hitung mundur, pintu Adven yang dibuka, nama dan undian Secret Santa, daftar hadiah, anggaran, dan pengingat hanya disimpan di perangkat Anda. Semuanya tidak pernah dikirim ke kami. Menghapus aplikasi akan menghapusnya.'],
       ['Foto', 'Jika Anda memilih foto sendiri, aplikasi hanya dapat melihat foto itu. Salinannya disimpan di iPhone untuk hitung mundur dan widget dan tidak pernah diunggah. Anda bisa menghapusnya kapan saja di aplikasi.'],
@@ -311,7 +311,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ms: {
-    title: 'Dasar Privasi', updated: 'Kemas kini terakhir', intro: 'Christmas Countdown: Advent berfungsi tanpa akaun dan tanpa iklan. Kami tidak mengumpul, menjual atau berkongsi data peribadi anda.',
+    title: 'Dasar Privasi', updated: 'Kemas kini terakhir', intro: 'Christmas Countdown – Widget berfungsi tanpa akaun dan tanpa iklan. Kami tidak mengumpul, menjual atau berkongsi data peribadi anda.',
     s: [
       ['Disimpan hanya di iPhone anda', 'Tetapan kira detik, pintu Adven yang dibuka, nama dan cabutan Secret Santa, senarai hadiah, bajet dan peringatan disimpan hanya pada peranti anda. Ia tidak pernah dihantar kepada kami. Memadam aplikasi akan memadamnya.'],
       ['Foto', 'Jika anda memilih foto sendiri, aplikasi hanya dapat melihat foto itu. Salinannya disimpan di iPhone untuk kira detik dan widget dan tidak pernah dimuat naik. Anda boleh membuangnya bila-bila masa dalam aplikasi.'],
@@ -324,7 +324,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   vi: {
-    title: 'Chính sách quyền riêng tư', updated: 'Cập nhật lần cuối', intro: 'Christmas Countdown: Advent hoạt động không cần tài khoản và không có quảng cáo. Chúng tôi không thu thập, bán hay chia sẻ dữ liệu cá nhân của bạn.',
+    title: 'Chính sách quyền riêng tư', updated: 'Cập nhật lần cuối', intro: 'Christmas Countdown – Widget hoạt động không cần tài khoản và không có quảng cáo. Chúng tôi không thu thập, bán hay chia sẻ dữ liệu cá nhân của bạn.',
     s: [
       ['Chỉ lưu trên iPhone của bạn', 'Cài đặt đếm ngược, các ô lịch Mùa Vọng đã mở, tên và kết quả bốc thăm Ông già Noel bí mật, danh sách quà, ngân sách và lời nhắc chỉ được lưu trên thiết bị của bạn. Chúng không bao giờ được gửi cho chúng tôi. Xóa ứng dụng sẽ xóa chúng.'],
       ['Ảnh', 'Nếu bạn chọn ảnh riêng, ứng dụng chỉ thấy đúng ảnh đó. Một bản sao được lưu trên iPhone cho phần đếm ngược và tiện ích và không bao giờ được tải lên. Bạn có thể gỡ ảnh bất cứ lúc nào trong ứng dụng.'],
@@ -337,7 +337,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   hi: {
-    title: 'गोपनीयता नीति', updated: 'अंतिम अपडेट', intro: 'Christmas Countdown: Advent बिना अकाउंट और बिना विज्ञापन के चलता है। हम आपकी निजी जानकारी इकट्ठा, बेचते या साझा नहीं करते।',
+    title: 'गोपनीयता नीति', updated: 'अंतिम अपडेट', intro: 'Christmas Countdown – Widget बिना अकाउंट और बिना विज्ञापन के चलता है। हम आपकी निजी जानकारी इकट्ठा, बेचते या साझा नहीं करते।',
     s: [
       ['सिर्फ़ आपके iPhone पर सेव', 'काउंटडाउन सेटिंग, खोले गए एडवेंट दरवाज़े, सीक्रेट सांता के नाम और ड्रॉ, उपहार सूचियाँ, बजट और रिमाइंडर सिर्फ़ आपके डिवाइस पर सेव होते हैं। ये कभी हमें नहीं भेजे जाते। ऐप हटाने पर ये भी हट जाते हैं।'],
       ['फ़ोटो', 'अगर आप अपनी फ़ोटो चुनते हैं, तो ऐप सिर्फ़ वही फ़ोटो देख सकता है। काउंटडाउन और विजेट के लिए उसकी एक कॉपी आपके iPhone पर रहती है और कभी अपलोड नहीं होती। आप इसे ऐप में कभी भी हटा सकते हैं।'],
@@ -350,7 +350,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ja: {
-    title: 'プライバシーポリシー', updated: '最終更新日', intro: 'Christmas Countdown: Advent はアカウント不要・広告なしで動作します。お客様の個人情報を収集、販売、共有することはありません。',
+    title: 'プライバシーポリシー', updated: '最終更新日', intro: 'Christmas Countdown – Widget はアカウント不要・広告なしで動作します。お客様の個人情報を収集、販売、共有することはありません。',
     s: [
       ['データはiPhoneの中だけに', 'カウントダウンの設定、開けたアドベントの扉、シークレットサンタの名前と抽選結果、プレゼントリスト、予算、リマインダーは端末内にのみ保存され、当方に送信されることはありません。アプリを削除すると消去されます。'],
       ['写真', 'ご自身の写真を選んだ場合、アプリが見られるのは選んだ写真だけです。カウントダウンとウィジェット用にコピーがiPhone内に保存され、アップロードされることはありません。アプリ内でいつでも削除できます。'],
@@ -363,7 +363,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   'zh-Hant': {
-    title: '隱私權政策', updated: '最後更新', intro: 'Christmas Countdown: Advent 不需帳號、沒有廣告。我們不會收集、出售或分享你的個人資料。',
+    title: '隱私權政策', updated: '最後更新', intro: 'Christmas Countdown – Widget 不需帳號、沒有廣告。我們不會收集、出售或分享你的個人資料。',
     s: [
       ['只儲存在你的 iPhone', '倒數設定、已打開的降臨曆小門、交換禮物的名字與抽籤結果、禮物清單、預算和提醒都只儲存在你的裝置上，絕不會傳送給我們。刪除 App 後這些資料也會一併刪除。'],
       ['照片', '如果你選擇自己的照片，App 只能看到你選的那張。為了倒數和小工具，副本會保存在 iPhone 上，絕不會上傳。你可以隨時在 App 中移除。'],
@@ -376,7 +376,7 @@ export const PRIVACY: Record<Lang, Policy> = {
     ],
   },
   ar: {
-    title: 'سياسة الخصوصية', updated: 'آخر تحديث', intro: 'يعمل Christmas Countdown: Advent بلا حساب ولا إعلانات. نحن لا نجمع بياناتك الشخصية ولا نبيعها ولا نشاركها.',
+    title: 'سياسة الخصوصية', updated: 'آخر تحديث', intro: 'يعمل Christmas Countdown – Widget بلا حساب ولا إعلانات. نحن لا نجمع بياناتك الشخصية ولا نبيعها ولا نشاركها.',
     s: [
       ['محفوظة على iPhone فقط', 'إعدادات العد التنازلي ونوافذ تقويم المجيء المفتوحة وأسماء سانتا السري وقرعاته وقوائم الهدايا والميزانيات والتذكيرات تُحفظ على جهازك فقط، ولا تُرسل إلينا أبدًا. حذف التطبيق يحذفها.'],
       ['الصور', 'إذا اخترت صورتك الخاصة، فلا يرى التطبيق إلا تلك الصورة. تُحفظ نسخة منها على iPhone للعد التنازلي والأداة ولا تُرفع أبدًا. يمكنك إزالتها في أي وقت من التطبيق.'],
