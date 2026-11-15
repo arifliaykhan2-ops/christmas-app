@@ -45,3 +45,7 @@ store/screenshots/raw/
 store/screenshots/_page.html
 store/screenshots/*.log
 .claude/settings.local.json
+
+# Generated native projects (CNG)
+/ios
+/android
