@@ -27,9 +27,6 @@
       }
     },
     "base": {
-      "env": {
-        "EXPO_PUBLIC_REVENUECAT_IOS_KEY": ""
-      },
       "ios": {
         "image": "latest"
       }

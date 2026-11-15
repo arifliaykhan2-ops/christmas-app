@@ -49,3 +49,8 @@ store/screenshots/*.log
 # Generated native projects (CNG)
 /ios
 /android
+
+# Local env files (secrets)
+.env
+.env.*
+!.env.example

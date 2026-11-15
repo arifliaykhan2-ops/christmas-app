@@ -127,7 +127,32 @@
     },
     "extra": {
       "supportsRTL": true,
-      "appGroup": "group.app.christmascountdown.ios"
+      "appGroup": "group.app.christmascountdown.ios",
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "bundleIdentifier": "app.christmascountdown.ios.widget",
+                  "targetName": "ChristmasWidget",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.app.christmascountdown.ios"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "76a93c60-6bc6-455a-83ef-feef5e88d974"
+      }
     },
     "owner": "ayxanarifs-team"
   }
