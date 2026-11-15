@@ -1,0 +1,1308 @@
+{
+  "_": "Per-language sample data and captions for App Store screenshots. caps = [title, subtitle] for shots 1-6.",
+  "en": {
+    "locale": "en-US",
+    "currency": "USD",
+    "rate": 1,
+    "names": [
+      "Emma",
+      "Liam",
+      "Olivia",
+      "Noah",
+      "Ava"
+    ],
+    "gifts": [
+      "Book",
+      "Cozy scarf",
+      "Headphones",
+      "Chocolate box",
+      "Board game"
+    ],
+    "caps": [
+      [
+        "The cosiest Christmas countdown",
+        "Days, hours and seconds to the big day."
+      ],
+      [
+        "A surprise behind every door",
+        "24 Christmas verses, ideas and mini games."
+      ],
+      [
+        "Secret Santa in seconds",
+        "Draw names, pass the phone, no peeking."
+      ],
+      [
+        "Naughty or nice?",
+        "A fun fingerprint scan for the whole family."
+      ],
+      [
+        "Every gift, every budget",
+        "Track what’s bought and wrapped."
+      ],
+      [
+        "Make it yours",
+        "Your photo, colours and Home Screen widgets."
+      ]
+    ]
+  },
+  "fr": {
+    "locale": "fr-FR",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Léa",
+      "Hugo",
+      "Chloé",
+      "Louis",
+      "Manon"
+    ],
+    "gifts": [
+      "Livre",
+      "Écharpe douce",
+      "Casque audio",
+      "Boîte de chocolats",
+      "Jeu de société"
+    ],
+    "caps": [
+      [
+        "Le compte à rebours le plus douillet",
+        "Jours, heures et secondes avant Noël."
+      ],
+      [
+        "Une surprise derrière chaque case",
+        "24 versets de Noël, idées et mini-jeux."
+      ],
+      [
+        "Père Noël secret en un instant",
+        "Tirez les noms, passez le téléphone."
+      ],
+      [
+        "Sage ou pas sage ?",
+        "Un scan d’empreinte amusant pour toute la famille."
+      ],
+      [
+        "Chaque cadeau, chaque budget",
+        "Suivez ce qui est acheté et emballé."
+      ],
+      [
+        "À votre image",
+        "Votre photo, vos couleurs et des widgets."
+      ]
+    ]
+  },
+  "de": {
+    "locale": "de-DE",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Lena",
+      "Jonas",
+      "Mia",
+      "Paul",
+      "Emilia"
+    ],
+    "gifts": [
+      "Buch",
+      "Kuscheliger Schal",
+      "Kopfhörer",
+      "Pralinen",
+      "Brettspiel"
+    ],
+    "caps": [
+      [
+        "Der gemütlichste Weihnachts-Countdown",
+        "Tage, Stunden und Sekunden bis zum Fest."
+      ],
+      [
+        "Hinter jedem Türchen eine Überraschung",
+        "24 Weihnachtsverse, Ideen und Minispiele."
+      ],
+      [
+        "Wichteln in Sekunden",
+        "Namen losen, Handy weitergeben, nicht spicken."
+      ],
+      [
+        "Brav oder frech?",
+        "Ein lustiger Fingerabdruck-Scan für die ganze Familie."
+      ],
+      [
+        "Jedes Geschenk, jedes Budget",
+        "Behalte im Blick, was gekauft und verpackt ist."
+      ],
+      [
+        "Ganz nach deinem Geschmack",
+        "Dein Foto, deine Farben und Widgets."
+      ]
+    ]
+  },
+  "it": {
+    "locale": "it-IT",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Giulia",
+      "Luca",
+      "Sofia",
+      "Marco",
+      "Chiara"
+    ],
+    "gifts": [
+      "Libro",
+      "Sciarpa morbida",
+      "Cuffie",
+      "Cioccolatini",
+      "Gioco da tavolo"
+    ],
+    "caps": [
+      [
+        "Il conto alla rovescia più accogliente",
+        "Giorni, ore e secondi al grande giorno."
+      ],
+      [
+        "Una sorpresa dietro ogni casella",
+        "24 versetti di Natale, idee e minigiochi."
+      ],
+      [
+        "Babbo Natale segreto in un attimo",
+        "Estrai i nomi e passa il telefono."
+      ],
+      [
+        "Buono o birichino?",
+        "Una divertente scansione dell’impronta per tutta la famiglia."
+      ],
+      [
+        "Ogni regalo, ogni budget",
+        "Segna cosa è comprato e incartato."
+      ],
+      [
+        "Rendilo tuo",
+        "La tua foto, i tuoi colori e i widget."
+      ]
+    ]
+  },
+  "es": {
+    "locale": "es-ES",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Lucía",
+      "Mateo",
+      "Sofía",
+      "Hugo",
+      "Martina"
+    ],
+    "gifts": [
+      "Libro",
+      "Bufanda suave",
+      "Auriculares",
+      "Bombones",
+      "Juego de mesa"
+    ],
+    "caps": [
+      [
+        "La cuenta atrás más acogedora",
+        "Días, horas y segundos hasta Navidad."
+      ],
+      [
+        "Una sorpresa en cada casilla",
+        "24 versículos navideños, ideas y minijuegos."
+      ],
+      [
+        "Amigo invisible en segundos",
+        "Sortea nombres y pasa el teléfono."
+      ],
+      [
+        "¿Bueno o travieso?",
+        "Un divertido escáner de huella para toda la familia."
+      ],
+      [
+        "Cada regalo, cada presupuesto",
+        "Controla lo comprado y lo envuelto."
+      ],
+      [
+        "Hazla tuya",
+        "Tu foto, tus colores y widgets."
+      ]
+    ]
+  },
+  "pt": {
+    "locale": "pt-BR",
+    "currency": "BRL",
+    "rate": 5,
+    "names": [
+      "Ana",
+      "João",
+      "Beatriz",
+      "Pedro",
+      "Laura"
+    ],
+    "gifts": [
+      "Livro",
+      "Cachecol",
+      "Fones de ouvido",
+      "Chocolates",
+      "Jogo de tabuleiro"
+    ],
+    "caps": [
+      [
+        "A contagem de Natal mais aconchegante",
+        "Dias, horas e segundos até o grande dia."
+      ],
+      [
+        "Uma surpresa em cada janelinha",
+        "24 versículos de Natal, ideias e minijogos."
+      ],
+      [
+        "Amigo secreto em segundos",
+        "Sorteie os nomes e passe o celular."
+      ],
+      [
+        "Bonzinho ou levado?",
+        "Um scanner de digital divertido para a família toda."
+      ],
+      [
+        "Cada presente, cada orçamento",
+        "Veja o que já foi comprado e embrulhado."
+      ],
+      [
+        "Do seu jeito",
+        "Sua foto, suas cores e widgets."
+      ]
+    ]
+  },
+  "nl": {
+    "locale": "nl-NL",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Emma",
+      "Daan",
+      "Sophie",
+      "Lucas",
+      "Julia"
+    ],
+    "gifts": [
+      "Boek",
+      "Warme sjaal",
+      "Koptelefoon",
+      "Bonbons",
+      "Bordspel"
+    ],
+    "caps": [
+      [
+        "Het gezelligste kerstaftellen",
+        "Dagen, uren en seconden tot Kerstmis."
+      ],
+      [
+        "Achter elk deurtje een verrassing",
+        "24 kerstverzen, ideeën en minigames."
+      ],
+      [
+        "Lootjes trekken in seconden",
+        "Trek namen en geef de telefoon door."
+      ],
+      [
+        "Lief of stout?",
+        "Een grappige vingerafdrukscan voor het hele gezin."
+      ],
+      [
+        "Elk cadeau, elk budget",
+        "Houd bij wat gekocht en ingepakt is."
+      ],
+      [
+        "Helemaal van jou",
+        "Je foto, je kleuren en widgets."
+      ]
+    ]
+  },
+  "da": {
+    "locale": "da-DK",
+    "currency": "DKK",
+    "rate": 7,
+    "names": [
+      "Freja",
+      "Emil",
+      "Ida",
+      "William",
+      "Clara"
+    ],
+    "gifts": [
+      "Bog",
+      "Blødt tørklæde",
+      "Høretelefoner",
+      "Chokolade",
+      "Brætspil"
+    ],
+    "caps": [
+      [
+        "Den hyggeligste julenedtælling",
+        "Dage, timer og sekunder til juleaften."
+      ],
+      [
+        "En overraskelse bag hver låge",
+        "24 julevers, idéer og minispil."
+      ],
+      [
+        "Hemmelig nisse på et øjeblik",
+        "Træk navne og send telefonen rundt."
+      ],
+      [
+        "Artig eller uartig?",
+        "En sjov fingeraftryksscanning for hele familien."
+      ],
+      [
+        "Hver gave, hvert budget",
+        "Hold styr på, hvad der er købt og pakket ind."
+      ],
+      [
+        "Gør den til din",
+        "Dit foto, dine farver og widgets."
+      ]
+    ]
+  },
+  "sv": {
+    "locale": "sv-SE",
+    "currency": "SEK",
+    "rate": 10,
+    "names": [
+      "Alice",
+      "Elias",
+      "Maja",
+      "Hugo",
+      "Saga"
+    ],
+    "gifts": [
+      "Bok",
+      "Mysig halsduk",
+      "Hörlurar",
+      "Chokladask",
+      "Brädspel"
+    ],
+    "caps": [
+      [
+        "Den mysigaste nedräkningen till jul",
+        "Dagar, timmar och sekunder kvar."
+      ],
+      [
+        "En överraskning bakom varje lucka",
+        "24 julverser, idéer och minispel."
+      ],
+      [
+        "Julklappslek på nolltid",
+        "Dra namn och skicka runt telefonen."
+      ],
+      [
+        "Snäll eller stygg?",
+        "En rolig fingeravtrycksskanning för hela familjen."
+      ],
+      [
+        "Varje klapp, varje budget",
+        "Håll koll på vad som är köpt och inslaget."
+      ],
+      [
+        "Gör den till din",
+        "Ditt foto, dina färger och widgetar."
+      ]
+    ]
+  },
+  "nb": {
+    "locale": "nb-NO",
+    "currency": "NOK",
+    "rate": 10,
+    "names": [
+      "Nora",
+      "Jakob",
+      "Emma",
+      "Filip",
+      "Sofie"
+    ],
+    "gifts": [
+      "Bok",
+      "Mykt skjerf",
+      "Hodetelefoner",
+      "Sjokolade",
+      "Brettspill"
+    ],
+    "caps": [
+      [
+        "Den koseligste nedtellingen til jul",
+        "Dager, timer og sekunder igjen."
+      ],
+      [
+        "En overraskelse bak hver luke",
+        "24 juleord fra Bibelen, idéer og minispill."
+      ],
+      [
+        "Hemmelig nisse på sekunder",
+        "Trekk navn og send telefonen rundt."
+      ],
+      [
+        "Snill eller slem?",
+        "En morsom fingeravtrykkskanning for hele familien."
+      ],
+      [
+        "Hver gave, hvert budsjett",
+        "Hold oversikt over hva som er kjøpt og pakket."
+      ],
+      [
+        "Gjør den til din",
+        "Ditt bilde, dine farger og widgeter."
+      ]
+    ]
+  },
+  "fi": {
+    "locale": "fi-FI",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Aino",
+      "Eino",
+      "Helmi",
+      "Leo",
+      "Ella"
+    ],
+    "gifts": [
+      "Kirja",
+      "Pehmeä huivi",
+      "Kuulokkeet",
+      "Suklaarasia",
+      "Lautapeli"
+    ],
+    "caps": [
+      [
+        "Tunnelmallisin joululaskuri",
+        "Päivät, tunnit ja sekunnit jouluun."
+      ],
+      [
+        "Yllätys jokaisen luukun takana",
+        "24 jouluista raamatunjaetta, ideaa ja minipeliä."
+      ],
+      [
+        "Salainen joulupukki hetkessä",
+        "Arvo nimet ja kierrätä puhelinta."
+      ],
+      [
+        "Kiltti vai tuhma?",
+        "Hauska sormenjälkiskannaus koko perheelle."
+      ],
+      [
+        "Jokainen lahja, jokainen budjetti",
+        "Pidä kirjaa ostetuista ja paketoiduista."
+      ],
+      [
+        "Tee siitä omasi",
+        "Oma kuva, omat värit ja widgetit."
+      ]
+    ]
+  },
+  "pl": {
+    "locale": "pl-PL",
+    "currency": "PLN",
+    "rate": 4,
+    "names": [
+      "Zuzanna",
+      "Jan",
+      "Julia",
+      "Antoni",
+      "Hanna"
+    ],
+    "gifts": [
+      "Książka",
+      "Ciepły szalik",
+      "Słuchawki",
+      "Bombonierka",
+      "Gra planszowa"
+    ],
+    "caps": [
+      [
+        "Najprzytulniejsze odliczanie do Świąt",
+        "Dni, godziny i sekundy do Wigilii."
+      ],
+      [
+        "Niespodzianka w każdym okienku",
+        "24 świąteczne wersety, pomysły i minigry."
+      ],
+      [
+        "Mikołajki w kilka sekund",
+        "Wylosuj imiona i podaj telefon dalej."
+      ],
+      [
+        "Grzeczny czy niegrzeczny?",
+        "Zabawny skan odcisku palca dla całej rodziny."
+      ],
+      [
+        "Każdy prezent, każdy budżet",
+        "Sprawdzaj, co kupione i zapakowane."
+      ],
+      [
+        "Po Twojemu",
+        "Twoje zdjęcie, kolory i widżety."
+      ]
+    ]
+  },
+  "cs": {
+    "locale": "cs-CZ",
+    "currency": "CZK",
+    "rate": 23,
+    "names": [
+      "Eliška",
+      "Jakub",
+      "Tereza",
+      "Matyáš",
+      "Anna"
+    ],
+    "gifts": [
+      "Kniha",
+      "Hřejivá šála",
+      "Sluchátka",
+      "Bonboniéra",
+      "Desková hra"
+    ],
+    "caps": [
+      [
+        "Nejútulnější odpočet do Vánoc",
+        "Dny, hodiny a sekundy do Štědrého dne."
+      ],
+      [
+        "Za každým okénkem překvapení",
+        "24 vánočních veršů, nápadů a miniher."
+      ],
+      [
+        "Tajný Ježíšek během chvilky",
+        "Vylosuj jména a posílej telefon dál."
+      ],
+      [
+        "Hodný, nebo zlobivý?",
+        "Zábavné skenování otisku pro celou rodinu."
+      ],
+      [
+        "Každý dárek, každý rozpočet",
+        "Sleduj, co je koupené a zabalené."
+      ],
+      [
+        "Podle tebe",
+        "Tvoje fotka, barvy a widgety."
+      ]
+    ]
+  },
+  "sk": {
+    "locale": "sk-SK",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Sofia",
+      "Jakub",
+      "Nina",
+      "Samuel",
+      "Ema"
+    ],
+    "gifts": [
+      "Kniha",
+      "Hrejivý šál",
+      "Slúchadlá",
+      "Bonboniéra",
+      "Spoločenská hra"
+    ],
+    "caps": [
+      [
+        "Najútulnejší odpočet do Vianoc",
+        "Dni, hodiny a sekundy do Štedrého dňa."
+      ],
+      [
+        "Za každým okienkom prekvapenie",
+        "24 vianočných veršov, nápadov a miniher."
+      ],
+      [
+        "Tajný Ježiško za chvíľu",
+        "Vyžrebuj mená a posielaj telefón ďalej."
+      ],
+      [
+        "Dobrý, alebo zlobivý?",
+        "Zábavné skenovanie odtlačku pre celú rodinu."
+      ],
+      [
+        "Každý darček, každý rozpočet",
+        "Sleduj, čo je kúpené a zabalené."
+      ],
+      [
+        "Podľa teba",
+        "Tvoja fotka, farby a widgety."
+      ]
+    ]
+  },
+  "hu": {
+    "locale": "hu-HU",
+    "currency": "HUF",
+    "rate": 350,
+    "names": [
+      "Hanna",
+      "Bence",
+      "Anna",
+      "Máté",
+      "Zoé"
+    ],
+    "gifts": [
+      "Könyv",
+      "Puha sál",
+      "Fejhallgató",
+      "Bonbon",
+      "Társasjáték"
+    ],
+    "caps": [
+      [
+        "A legmeghittebb karácsonyi visszaszámláló",
+        "Napok, órák és másodpercek az ünnepig."
+      ],
+      [
+        "Minden ablak mögött meglepetés",
+        "24 karácsonyi ige, ötlet és minijáték."
+      ],
+      [
+        "Titkos angyalka pillanatok alatt",
+        "Sorsold ki a neveket, add körbe a telefont."
+      ],
+      [
+        "Jó vagy rossz?",
+        "Vicces ujjlenyomat-szkennelés az egész családnak."
+      ],
+      [
+        "Minden ajándék, minden keret",
+        "Kövesd, mi van megvéve és becsomagolva."
+      ],
+      [
+        "Legyen a tiéd",
+        "Saját fotó, színek és widgetek."
+      ]
+    ]
+  },
+  "ro": {
+    "locale": "ro-RO",
+    "currency": "RON",
+    "rate": 4.5,
+    "names": [
+      "Maria",
+      "Andrei",
+      "Ioana",
+      "David",
+      "Elena"
+    ],
+    "gifts": [
+      "Carte",
+      "Fular călduros",
+      "Căști",
+      "Bomboane",
+      "Joc de societate"
+    ],
+    "caps": [
+      [
+        "Cea mai caldă numărătoare de Crăciun",
+        "Zile, ore și secunde până la marea zi."
+      ],
+      [
+        "O surpriză în spatele fiecărei ușițe",
+        "24 de versete de Crăciun, idei și minijocuri."
+      ],
+      [
+        "Moș Crăciun secret în câteva secunde",
+        "Trage numele și dă telefonul mai departe."
+      ],
+      [
+        "Cuminte sau obraznic?",
+        "O scanare amuzantă a amprentei pentru toată familia."
+      ],
+      [
+        "Fiecare cadou, fiecare buget",
+        "Vezi ce e cumpărat și împachetat."
+      ],
+      [
+        "Fă-o a ta",
+        "Fotografia ta, culorile tale și widgeturi."
+      ]
+    ]
+  },
+  "hr": {
+    "locale": "hr-HR",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Mia",
+      "Luka",
+      "Lucija",
+      "Jakov",
+      "Nika"
+    ],
+    "gifts": [
+      "Knjiga",
+      "Topli šal",
+      "Slušalice",
+      "Bombonijera",
+      "Društvena igra"
+    ],
+    "caps": [
+      [
+        "Najtoplije odbrojavanje do Božića",
+        "Dani, sati i sekunde do Badnjaka."
+      ],
+      [
+        "Iza svakog prozorčića iznenađenje",
+        "24 božićna stiha, ideje i mini-igre."
+      ],
+      [
+        "Tajni Djed Božićnjak u tren oka",
+        "Izvuci imena i dodaj mobitel dalje."
+      ],
+      [
+        "Dobar ili zločest?",
+        "Zabavno skeniranje otiska za cijelu obitelj."
+      ],
+      [
+        "Svaki dar, svaki budžet",
+        "Prati što je kupljeno i zamotano."
+      ],
+      [
+        "Neka bude tvoje",
+        "Tvoja fotografija, boje i widgeti."
+      ]
+    ]
+  },
+  "el": {
+    "locale": "el-GR",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Μαρία",
+      "Γιώργος",
+      "Ελένη",
+      "Νίκος",
+      "Σοφία"
+    ],
+    "gifts": [
+      "Βιβλίο",
+      "Ζεστό κασκόλ",
+      "Ακουστικά",
+      "Σοκολατάκια",
+      "Επιτραπέζιο"
+    ],
+    "caps": [
+      [
+        "Η πιο ζεστή αντίστροφη μέτρηση",
+        "Μέρες, ώρες και δευτερόλεπτα ως τα Χριστούγεννα."
+      ],
+      [
+        "Μια έκπληξη πίσω από κάθε παραθυράκι",
+        "24 χριστουγεννιάτικα εδάφια, ιδέες και παιχνίδια."
+      ],
+      [
+        "Μυστικός Άγιος Βασίλης σε δευτερόλεπτα",
+        "Κλήρωση ονομάτων και το κινητό γύρω-γύρω."
+      ],
+      [
+        "Φρόνιμος ή άτακτος;",
+        "Μια αστεία σάρωση αποτυπώματος για όλη την οικογένεια."
+      ],
+      [
+        "Κάθε δώρο, κάθε ποσό",
+        "Δες τι αγοράστηκε και τι τυλίχτηκε."
+      ],
+      [
+        "Κάν’ το δικό σου",
+        "Η φωτογραφία σου, τα χρώματά σου και widget."
+      ]
+    ]
+  },
+  "ru": {
+    "locale": "ru-RU",
+    "currency": "RUB",
+    "rate": 90,
+    "names": [
+      "Анна",
+      "Иван",
+      "Мария",
+      "Михаил",
+      "София"
+    ],
+    "gifts": [
+      "Книга",
+      "Тёплый шарф",
+      "Наушники",
+      "Конфеты",
+      "Настольная игра"
+    ],
+    "caps": [
+      [
+        "Самый уютный отсчёт до Рождества",
+        "Дни, часы и секунды до праздника."
+      ],
+      [
+        "Сюрприз за каждым окошком",
+        "24 рождественских стиха, идеи и мини-игры."
+      ],
+      [
+        "Тайный Санта за секунды",
+        "Жеребьёвка и телефон по кругу."
+      ],
+      [
+        "Хороший или проказник?",
+        "Весёлое сканирование отпечатка для всей семьи."
+      ],
+      [
+        "Каждый подарок, любой бюджет",
+        "Отмечайте купленное и упакованное."
+      ],
+      [
+        "Сделайте его своим",
+        "Ваше фото, цвета и виджеты."
+      ]
+    ]
+  },
+  "uk": {
+    "locale": "uk-UA",
+    "currency": "UAH",
+    "rate": 40,
+    "names": [
+      "Олена",
+      "Андрій",
+      "Софія",
+      "Максим",
+      "Ірина"
+    ],
+    "gifts": [
+      "Книжка",
+      "Теплий шарф",
+      "Навушники",
+      "Цукерки",
+      "Настільна гра"
+    ],
+    "caps": [
+      [
+        "Найзатишніший відлік до Різдва",
+        "Дні, години й секунди до свята."
+      ],
+      [
+        "Сюрприз за кожним віконцем",
+        "24 різдвяні вірші, ідеї та міні-ігри."
+      ],
+      [
+        "Таємний Санта за секунди",
+        "Жеребкування і телефон по колу."
+      ],
+      [
+        "Чемний чи пустун?",
+        "Кумедне сканування відбитка для всієї родини."
+      ],
+      [
+        "Кожен подарунок, будь-який бюджет",
+        "Позначайте куплене та запаковане."
+      ],
+      [
+        "Зробіть його своїм",
+        "Ваше фото, кольори та віджети."
+      ]
+    ]
+  },
+  "ca": {
+    "locale": "ca-ES",
+    "currency": "EUR",
+    "rate": 1,
+    "names": [
+      "Laia",
+      "Pol",
+      "Júlia",
+      "Marc",
+      "Martina"
+    ],
+    "gifts": [
+      "Llibre",
+      "Bufanda suau",
+      "Auriculars",
+      "Bombons",
+      "Joc de taula"
+    ],
+    "caps": [
+      [
+        "El compte enrere més acollidor",
+        "Dies, hores i segons fins a Nadal."
+      ],
+      [
+        "Una sorpresa a cada finestreta",
+        "24 versets de Nadal, idees i minijocs."
+      ],
+      [
+        "Amic invisible en segons",
+        "Sorteja els noms i passa el telèfon."
+      ],
+      [
+        "Bo o entremaliat?",
+        "Un divertit escàner d’empremta per a tota la família."
+      ],
+      [
+        "Cada regal, cada pressupost",
+        "Controla què has comprat i embolicat."
+      ],
+      [
+        "Fes-la teva",
+        "La teva foto, els teus colors i ginys."
+      ]
+    ]
+  },
+  "ko": {
+    "locale": "ko-KR",
+    "currency": "KRW",
+    "rate": 1300,
+    "names": [
+      "지우",
+      "서준",
+      "하은",
+      "도윤",
+      "서연"
+    ],
+    "gifts": [
+      "책",
+      "포근한 목도리",
+      "헤드폰",
+      "초콜릿 상자",
+      "보드게임"
+    ],
+    "caps": [
+      [
+        "가장 포근한 크리스마스 카운트다운",
+        "크리스마스까지 남은 일, 시간, 초"
+      ],
+      [
+        "문마다 숨은 깜짝 선물",
+        "24개의 크리스마스 성경 구절, 아이디어, 미니 게임"
+      ],
+      [
+        "몇 초 만에 시크릿 산타",
+        "이름을 뽑고 휴대폰을 돌려 보세요"
+      ],
+      [
+        "착한 아이? 나쁜 아이?",
+        "온 가족이 즐기는 재미있는 지문 스캔"
+      ],
+      [
+        "모든 선물, 모든 예산",
+        "구매와 포장 여부를 한눈에"
+      ],
+      [
+        "나만의 스타일로",
+        "내 사진, 색상, 홈 화면 위젯"
+      ]
+    ]
+  },
+  "id": {
+    "locale": "id-ID",
+    "currency": "IDR",
+    "rate": 15000,
+    "names": [
+      "Putri",
+      "Budi",
+      "Siti",
+      "Rizky",
+      "Ayu"
+    ],
+    "gifts": [
+      "Buku",
+      "Syal hangat",
+      "Headphone",
+      "Cokelat",
+      "Permainan papan"
+    ],
+    "caps": [
+      [
+        "Hitung mundur Natal paling hangat",
+        "Hari, jam, dan detik menuju Natal."
+      ],
+      [
+        "Kejutan di balik setiap pintu",
+        "24 ayat Natal, ide, dan gim mini."
+      ],
+      [
+        "Secret Santa dalam hitungan detik",
+        "Undi nama dan oper ponselnya."
+      ],
+      [
+        "Baik atau nakal?",
+        "Pindai sidik jari yang seru untuk seluruh keluarga."
+      ],
+      [
+        "Setiap hadiah, setiap anggaran",
+        "Pantau yang sudah dibeli dan dibungkus."
+      ],
+      [
+        "Jadikan milikmu",
+        "Fotomu, warnamu, dan widget."
+      ]
+    ]
+  },
+  "ms": {
+    "locale": "ms-MY",
+    "currency": "MYR",
+    "rate": 4.5,
+    "names": [
+      "Aisyah",
+      "Adam",
+      "Nur",
+      "Harith",
+      "Sofea"
+    ],
+    "gifts": [
+      "Buku",
+      "Selendang hangat",
+      "Fon kepala",
+      "Coklat",
+      "Permainan papan"
+    ],
+    "caps": [
+      [
+        "Kira detik Krismas paling selesa",
+        "Hari, jam dan saat menjelang Krismas."
+      ],
+      [
+        "Kejutan di sebalik setiap pintu",
+        "24 ayat Krismas, idea dan permainan mini."
+      ],
+      [
+        "Secret Santa dalam beberapa saat",
+        "Cabut nama dan hulurkan telefon."
+      ],
+      [
+        "Baik atau nakal?",
+        "Imbasan cap jari yang seronok untuk seisi keluarga."
+      ],
+      [
+        "Setiap hadiah, setiap bajet",
+        "Pantau yang sudah dibeli dan dibalut."
+      ],
+      [
+        "Jadikan milik anda",
+        "Foto, warna dan widget anda."
+      ]
+    ]
+  },
+  "vi": {
+    "locale": "vi-VN",
+    "currency": "VND",
+    "rate": 24000,
+    "names": [
+      "Linh",
+      "Minh",
+      "Hương",
+      "Nam",
+      "Mai"
+    ],
+    "gifts": [
+      "Sách",
+      "Khăn quàng ấm",
+      "Tai nghe",
+      "Hộp sô-cô-la",
+      "Bộ trò chơi"
+    ],
+    "caps": [
+      [
+        "Đếm ngược Giáng sinh ấm áp nhất",
+        "Ngày, giờ và giây đến đêm Giáng sinh."
+      ],
+      [
+        "Bất ngờ sau mỗi ô cửa",
+        "24 câu Kinh Thánh, ý tưởng và trò chơi nhỏ."
+      ],
+      [
+        "Ông già Noel bí mật trong vài giây",
+        "Bốc thăm tên rồi chuyền điện thoại."
+      ],
+      [
+        "Ngoan hay nghịch?",
+        "Quét vân tay vui nhộn cho cả gia đình."
+      ],
+      [
+        "Mọi món quà, mọi ngân sách",
+        "Theo dõi món đã mua và đã gói."
+      ],
+      [
+        "Theo phong cách của bạn",
+        "Ảnh, màu sắc và tiện ích của riêng bạn."
+      ]
+    ]
+  },
+  "hi": {
+    "locale": "hi-IN",
+    "currency": "INR",
+    "rate": 80,
+    "names": [
+      "अनन्या",
+      "आरव",
+      "दीया",
+      "विवान",
+      "सान्वी"
+    ],
+    "gifts": [
+      "किताब",
+      "गर्म मफ़लर",
+      "हेडफ़ोन",
+      "चॉकलेट",
+      "बोर्ड गेम"
+    ],
+    "caps": [
+      [
+        "सबसे प्यारा क्रिसमस काउंटडाउन",
+        "क्रिसमस तक दिन, घंटे और सेकंड।"
+      ],
+      [
+        "हर दरवाज़े के पीछे एक सरप्राइज़",
+        "24 क्रिसमस वचन, आइडिया और मिनी गेम।"
+      ],
+      [
+        "पल भर में सीक्रेट सांता",
+        "नाम निकालें और फ़ोन आगे बढ़ाएँ।"
+      ],
+      [
+        "अच्छा या शरारती?",
+        "पूरे परिवार के लिए मज़ेदार फ़िंगरप्रिंट स्कैन।"
+      ],
+      [
+        "हर उपहार, हर बजट",
+        "देखें क्या ख़रीदा और पैक हुआ।"
+      ],
+      [
+        "इसे अपना बनाएँ",
+        "आपकी फ़ोटो, रंग और विजेट।"
+      ]
+    ]
+  },
+  "ja": {
+    "locale": "ja-JP",
+    "currency": "JPY",
+    "rate": 150,
+    "names": [
+      "さくら",
+      "蓮",
+      "結衣",
+      "陽翔",
+      "美咲"
+    ],
+    "gifts": [
+      "本",
+      "ふわふわマフラー",
+      "ヘッドホン",
+      "チョコレート",
+      "ボードゲーム"
+    ],
+    "caps": [
+      [
+        "いちばん温かい<br>クリスマスカウントダウン",
+        "クリスマスまでの日・時間・秒"
+      ],
+      [
+        "扉の向こうに<br>毎日サプライズ",
+        "24の聖書のことば、アイデア、ミニゲーム"
+      ],
+      [
+        "シークレットサンタも<br>一瞬で",
+        "名前を引いてスマホを回すだけ"
+      ],
+      [
+        "いい子？わるい子？",
+        "家族みんなで楽しめる指紋スキャン"
+      ],
+      [
+        "プレゼントも予算も<br>ひと目で",
+        "購入済み・ラッピング済みを記録"
+      ],
+      [
+        "あなただけのデザインに",
+        "写真・カラー・ホーム画面ウィジェット"
+      ]
+    ]
+  },
+  "zh-Hant": {
+    "locale": "zh-TW",
+    "currency": "TWD",
+    "rate": 30,
+    "names": [
+      "怡君",
+      "家豪",
+      "雅婷",
+      "志明",
+      "淑芬"
+    ],
+    "gifts": [
+      "書",
+      "溫暖圍巾",
+      "耳機",
+      "巧克力禮盒",
+      "桌遊"
+    ],
+    "caps": [
+      [
+        "最溫馨的聖誕倒數",
+        "距離聖誕節的天數、小時與秒數"
+      ],
+      [
+        "每扇小門都有驚喜",
+        "24 段聖誕經文、點子與小遊戲"
+      ],
+      [
+        "幾秒完成交換禮物抽籤",
+        "抽出名字，再把手機傳下去"
+      ],
+      [
+        "乖寶寶還是調皮鬼？",
+        "全家都能玩的趣味指紋掃描"
+      ],
+      [
+        "每份禮物，每筆預算",
+        "記錄已購買與已包裝的禮物"
+      ],
+      [
+        "打造你的專屬風格",
+        "你的照片、配色與主畫面小工具"
+      ]
+    ]
+  },
+  "ar": {
+    "locale": "ar-SA",
+    "currency": "SAR",
+    "rate": 3.75,
+    "names": [
+      "ليلى",
+      "عمر",
+      "نور",
+      "يوسف",
+      "مريم"
+    ],
+    "gifts": [
+      "كتاب",
+      "وشاح دافئ",
+      "سماعات",
+      "شوكولاتة",
+      "لعبة لوحية"
+    ],
+    "caps": [
+      [
+        "أدفأ عدّ تنازلي لعيد الميلاد",
+        "الأيام والساعات والثواني حتى العيد."
+      ],
+      [
+        "مفاجأة خلف كل باب",
+        "24 آية ميلادية وأفكار وألعاب صغيرة."
+      ],
+      [
+        "سانتا السري في ثوانٍ",
+        "اسحب الأسماء ومرّر الهاتف."
+      ],
+      [
+        "مطيع أم مشاغب؟",
+        "مسح بصمة ممتع للعائلة كلها."
+      ],
+      [
+        "كل هدية، كل ميزانية",
+        "تابع ما اشتريته وغلّفته."
+      ],
+      [
+        "اجعله خاصًا بك",
+        "صورتك وألوانك وأدوات الشاشة الرئيسية."
+      ]
+    ]
+  }
+}

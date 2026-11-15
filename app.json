@@ -1,25 +1,134 @@
 {
   "expo": {
-    "name": "christmas",
-    "slug": "christmas",
+    "name": "Christmas",
+    "slug": "christmas-countdown",
+    "scheme": "christmascountdown",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0d3a1f",
+    "platforms": [
+      "ios",
+      "web"
+    ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+      "supportsTablet": false,
+      "bundleIdentifier": "app.christmascountdown.ios",
+      "config": {
+        "usesNonExemptEncryption": false
       },
-      "predictiveBackGestureEnabled": false
+      "entitlements": {
+        "com.apple.security.application-groups": [
+          "group.app.christmascountdown.ios"
+        ]
+      },
+      "infoPlist": {
+        "CFBundleLocalizations": [
+          "en",
+          "fr",
+          "de",
+          "it",
+          "es",
+          "pt",
+          "nl",
+          "da",
+          "sv",
+          "nb",
+          "fi",
+          "pl",
+          "cs",
+          "sk",
+          "hu",
+          "ro",
+          "hr",
+          "el",
+          "ru",
+          "uk",
+          "ca",
+          "ko",
+          "id",
+          "ms",
+          "vi",
+          "hi",
+          "ja",
+          "zh-Hant",
+          "ar"
+        ],
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "appleTeamId": "CBRUBJ4N2Z"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "locales": {
+      "en": "./locales/en.json",
+      "fr": "./locales/fr.json",
+      "de": "./locales/de.json",
+      "it": "./locales/it.json",
+      "es": "./locales/es.json",
+      "pt": "./locales/pt.json",
+      "nl": "./locales/nl.json",
+      "da": "./locales/da.json",
+      "sv": "./locales/sv.json",
+      "nb": "./locales/nb.json",
+      "fi": "./locales/fi.json",
+      "pl": "./locales/pl.json",
+      "cs": "./locales/cs.json",
+      "sk": "./locales/sk.json",
+      "hu": "./locales/hu.json",
+      "ro": "./locales/ro.json",
+      "hr": "./locales/hr.json",
+      "el": "./locales/el.json",
+      "ru": "./locales/ru.json",
+      "uk": "./locales/uk.json",
+      "ca": "./locales/ca.json",
+      "ko": "./locales/ko.json",
+      "id": "./locales/id.json",
+      "ms": "./locales/ms.json",
+      "vi": "./locales/vi.json",
+      "hi": "./locales/hi.json",
+      "ja": "./locales/ja.json",
+      "zh-Hant": "./locales/zh-Hant.json",
+      "ar": "./locales/ar.json"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-asset",
+      "expo-localization",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/3d/santa_claus.png",
+          "imageWidth": 140,
+          "backgroundColor": "#0d3a1f"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#c8102e"
+        }
+      ],
+      "@bacons/apple-targets",
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo for your Christmas countdown and widget.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "supportsRTL": true,
+      "appGroup": "group.app.christmascountdown.ios"
+    },
+    "owner": "ayxanarifs-team"
   }
 }

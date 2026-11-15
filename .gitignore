@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# App Store screenshot pipeline: raw captures and logs are regenerated
+store/screenshots/raw/
+store/screenshots/_page.html
+store/screenshots/*.log
+.claude/settings.local.json
