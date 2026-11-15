@@ -3,9 +3,10 @@ import * as Haptics from 'expo-haptics';
 import { Image, type ImageStyle } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import LottieView from 'lottie-react-native';
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import {
   Animated,
+  Keyboard,
   Image as RNImage,
   Easing,
   Platform,
@@ -73,11 +74,39 @@ export function Backdrop() {
 export function Scene({ children, scroll = true, contentStyle }: { children: ReactNode; scroll?: boolean; contentStyle?: StyleProp<ViewStyle> }) {
   const insets = useSafeAreaInsets();
   const pad = { paddingTop: insets.top + 14, paddingBottom: 120, paddingHorizontal: 18, gap: 14 };
+  const scrollRef = useRef<ComponentRef<typeof ScrollView>>(null);
+  const offset = useRef(0);
+
+  // Keep the field being typed in above the keyboard (Secret Santa names, gift lists…).
+  useEffect(() => {
+    if (!scroll) return;
+    const sub = Keyboard.addListener('keyboardDidShow', (e) => {
+      const input = TextInput.State.currentlyFocusedInput();
+      if (!input) return;
+      input.measureInWindow((_x, y, _w, h) => {
+        const overflow = y + h + 24 - e.endCoordinates.screenY;
+        if (overflow > 0) scrollRef.current?.scrollTo({ y: offset.current + overflow, animated: true });
+      });
+    });
+    return () => sub.remove();
+  }, [scroll]);
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
       <Backdrop />
       {scroll ? (
-        <ScrollView contentContainerStyle={[pad, contentStyle]} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
+        <ScrollView
+          ref={scrollRef}
+          contentContainerStyle={[pad, contentStyle]}
+          showsVerticalScrollIndicator={false}
+          keyboardShouldPersistTaps="handled"
+          keyboardDismissMode="interactive"
+          automaticallyAdjustKeyboardInsets
+          scrollEventThrottle={32}
+          onScroll={(e) => {
+            offset.current = e.nativeEvent.contentOffset.y;
+          }}
+        >
           {children}
         </ScrollView>
       ) : (
