@@ -1,7 +1,7 @@
-import { router } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Accent, Card, Icon, ModalHeader, P, Scene } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { intlLocale, lang, strings, useI18nVersion } from '@/i18n';
 import { PRIVACY, PRIVACY_UPDATED, REVENUECAT_PRIVACY } from '@/i18n/privacy';
 import { colors, fonts, weights } from '@/lib/theme';
@@ -14,7 +14,7 @@ export default function PrivacyScreen() {
 
   return (
     <Scene contentStyle={st.content}>
-      <ModalHeader title={p.title} doneLabel={strings.common.done} onDone={() => router.back()} />
+      <ModalHeader title={p.title} doneLabel={strings.common.done} onDone={closeModal} />
       <View style={st.hero}>
         <Icon name="locked" size={72} />
         <View style={{ flex: 1, gap: 4 }}>

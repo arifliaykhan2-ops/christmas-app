@@ -39,8 +39,10 @@ function RootStack() {
         <Stack.Screen name="widget" options={{ presentation: 'modal' }} />
         <Stack.Screen name="door/[day]" options={{ presentation: 'modal' }} />
         <Stack.Screen name="game/[kind]" options={{ presentation: 'fullScreenModal' }} />
+        <Stack.Screen name="privacy" options={{ presentation: 'modal' }} />
       </Stack.Protected>
-      <Stack.Screen name="privacy" options={{ presentation: 'modal' }} />
+      {/* Every screen a new user may see must be in a guard: when "/" is blocked, expo-router opens the
+          first allowed route by file name, and an unguarded "privacy" won over "welcome". */}
       <Stack.Protected guard={!onboarded}>
         <Stack.Screen name="welcome" options={{ animation: 'fade' }} />
       </Stack.Protected>

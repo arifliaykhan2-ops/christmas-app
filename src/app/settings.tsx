@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { Backdrop, Card, Chip, Icon, Label, ModalHeader, P, haptic } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { LANG_NAMES, currencyOverride, detectLang, lang, langOverride, regionCurrency, strings, useI18nVersion } from '@/i18n';
 import { PRIVACY } from '@/i18n/privacy';
 import { VERSES } from '@/i18n/verses';
@@ -21,7 +22,7 @@ export default function SettingsScreen() {
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
       <Backdrop />
       <ScrollView contentContainerStyle={st.wrap}>
-        <ModalHeader title={s.title} doneLabel={strings.common.done} onDone={() => router.back()} />
+        <ModalHeader title={s.title} doneLabel={strings.common.done} onDone={closeModal} />
 
         <Card inner={{ paddingVertical: 6, gap: 0 }}>
           <LinkRow

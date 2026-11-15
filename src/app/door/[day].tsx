@@ -2,6 +2,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Accent, Button, Card, H1, Icon, ModalHeader, Scene, TextButton, haptic } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { fmt, lang, strings, useI18nVersion } from '@/i18n';
 import { VERSES } from '@/i18n/verses';
 import { DOORS } from '@/lib/advent';
@@ -28,7 +29,7 @@ export default function DoorScreen() {
     return (
       <Scene contentStyle={st.content}>
         <Icon name="locked" size={120} style={{ alignSelf: 'center' }} />
-        <TextButton title={strings.common.close} onPress={() => router.back()} />
+        <TextButton title={strings.common.close} onPress={closeModal} />
       </Scene>
     );
   }
@@ -38,7 +39,7 @@ export default function DoorScreen() {
 
   return (
     <Scene contentStyle={st.content}>
-      <ModalHeader doneLabel={strings.common.close} onDone={() => router.back()} />
+      <ModalHeader doneLabel={strings.common.close} onDone={closeModal} />
       <Accent style={{ textAlign: 'center' }}>{fmt(s.day, { n: day })}</Accent>
       <View style={st.hero}>
         <Icon name={door.icon} size={170} float />

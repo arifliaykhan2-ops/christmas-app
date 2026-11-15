@@ -45,10 +45,15 @@ export default function CountdownScreen() {
 
   // First launch after onboarding: offer Premium once (closable, Apple 3.1.2).
   const [introSeen, setIntroSeen, introLoaded] = useStored<boolean>('paywall.intro', false);
+  // Wait until the onboarding screen is gone and navigation has settled; pushing
+  // earlier left the paywall with nothing to go back to (its Close did nothing).
   useEffect(() => {
     if (!introLoaded || introSeen) return;
-    setIntroSeen(true);
-    if (!premium) router.push('/premium');
+    const t = setTimeout(() => {
+      setIntroSeen(true);
+      if (!premium) router.push('/premium');
+    }, 800);
+    return () => clearTimeout(t);
   }, [introLoaded, introSeen, premium, setIntroSeen]);
 
   async function addPhoto() {

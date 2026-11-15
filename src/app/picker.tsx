@@ -1,7 +1,8 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { router, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import { Alert, FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Backdrop, ModalHeader, haptic } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import {
   LANGS,
   LANG_NAMES,
@@ -64,7 +65,7 @@ export default function PickerScreen() {
         contentContainerStyle={st.list}
         ListHeaderComponent={
           <View style={st.title}>
-            <ModalHeader title={kind === 'currency' ? s.currency : s.languageTitle} doneLabel={strings.common.done} onDone={() => router.back()} />
+            <ModalHeader title={kind === 'currency' ? s.currency : s.languageTitle} doneLabel={strings.common.done} onDone={closeModal} />
           </View>
         }
         ItemSeparatorComponent={() => <View style={st.sep} />}
@@ -75,7 +76,7 @@ export default function PickerScreen() {
             onPress={() => {
               haptic.tap();
               item.onPress();
-              if (kind === 'currency') router.back();
+              if (kind === 'currency') closeModal();
             }}
             style={({ pressed }) => [
               st.row,

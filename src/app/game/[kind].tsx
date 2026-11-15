@@ -1,9 +1,10 @@
 import { Image } from 'expo-image';
-import { router, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useEffectEvent, useRef, useState } from 'react';
 import { Animated, Easing, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Accent, Button, Card, H1, Icon, P, Scene, TextButton, haptic } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { fmt, strings, useI18nVersion } from '@/i18n';
 import { icons3d, type Icon3D } from '@/lib/assets';
 import { useStored } from '@/lib/storage';
@@ -80,7 +81,7 @@ function CatchGame({ fast }: { fast: boolean }) {
           {best > 0 && <Accent style={{ textAlign: 'center' }}>★ {best}</Accent>}
           <Button title={phase === 'done' ? g.again : g.start} chevrons onPress={start} />
         </Card>
-        <TextButton title={strings.common.close} onPress={() => router.back()} />
+        <TextButton title={strings.common.close} onPress={closeModal} />
       </Scene>
     );
   }
@@ -189,7 +190,7 @@ function MemoryGame() {
         })}
       </View>
       {done && <Button title={g.again} chevrons onPress={restart} />}
-      <TextButton title={strings.common.close} onPress={() => router.back()} />
+      <TextButton title={strings.common.close} onPress={closeModal} />
     </Scene>
   );
 }

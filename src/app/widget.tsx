@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 import { WidgetPreview } from '@/components/WidgetPreview';
 import { Button, Card, ModalHeader, P, Scene } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { strings, useI18nVersion } from '@/i18n';
 import { usePremium } from '@/lib/premium';
 import { colors, fonts, weights } from '@/lib/theme';
@@ -14,7 +15,7 @@ export default function WidgetGuideScreen() {
 
   return (
     <Scene contentStyle={{ gap: 16, paddingBottom: 48 }}>
-      <ModalHeader title={w.title} doneLabel={strings.common.done} onDone={() => router.back()} />
+      <ModalHeader title={w.title} doneLabel={strings.common.done} onDone={closeModal} />
       <View style={st.previews}>
         <WidgetPreview size="medium" width={150} />
         <WidgetPreview size="small" width={150} />

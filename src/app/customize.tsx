@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { Alert, Pressable, StyleSheet, View } from 'react-native';
 import { Button, Card, H2, Icon, ModalHeader, Scene, TextButton, haptic } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { strings, useI18nVersion } from '@/i18n';
 import { THEMES, THEME_IDS } from '@/lib/personalize';
 import { usePremium } from '@/lib/premium';
@@ -30,7 +31,7 @@ export default function CustomizeScreen() {
 
   return (
     <Scene contentStyle={{ paddingTop: 30 }}>
-      <ModalHeader title={s.personalize} doneLabel={strings.common.done} onDone={() => router.back()} />
+      <ModalHeader title={s.personalize} doneLabel={strings.common.done} onDone={closeModal} />
 
       <Card>
         <H2>{s.photoTitle}</H2>

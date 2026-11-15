@@ -4,6 +4,7 @@ import * as WebBrowser from 'expo-web-browser';
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Accent, Button, Card, H1, Icon, ModalHeader, P, Scene, TextButton } from '@/components/ui';
+import { closeModal } from '@/lib/nav';
 import { fmt, strings, useI18nVersion } from '@/i18n';
 import { IS_EXPO_GO, TERMS_URL, clearTestPurchase, loadOffer, manageSubscription, restore, subscribe, usePremium, type Offer } from '@/lib/premium';
 import type { Icon3D } from '@/lib/assets';
@@ -26,7 +27,7 @@ export default function PremiumScreen() {
   async function start() {
     setBusy(true);
     try {
-      if (await subscribe()) router.back();
+      if (await subscribe()) closeModal();
     } catch {
       Alert.alert(s.title, offer === null ? s.unavailable : s.error);
     } finally {
@@ -55,7 +56,7 @@ export default function PremiumScreen() {
 
   return (
     <Scene contentStyle={{ paddingTop: 30 }}>
-      <ModalHeader doneLabel={strings.common.close} onDone={() => router.back()} />
+      <ModalHeader doneLabel={strings.common.close} onDone={closeModal} />
       {previewPhoto ? (
         // The photo they just tried: what they keep by subscribing.
         <View style={st.art}>
