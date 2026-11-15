@@ -62,6 +62,8 @@ private func deviceLang() -> String {
 struct ChristmasEntry: TimelineEntry {
   let date: Date
   let days: Int
+  // Next midnight: the live hh:mm:ss timer counts down to it, like the app's hours/minutes/seconds.
+  let nextDay: Date
   let isToday: Bool
   let words: Words
   // Premium personalisation written by the app (theme colours, small JPEG photo).
@@ -94,12 +96,15 @@ private func makeEntry(at date: Date) -> ChristmasEntry {
   let (month, day) = mode == "jan7" ? (1, 7) : (12, 25)
   let year = cal.component(.year, from: date)
   let today = cal.startOfDay(for: date)
+  let nextDay = cal.date(byAdding: .day, value: 1, to: today)!
   var target = cal.date(from: DateComponents(year: year, month: month, day: day))!
-  if today == target { return ChristmasEntry(date: date, days: 0, isToday: true, words: w, top: top, bottom: bottom, photo: photo, premium: premium) }
+  if today == target {
+    return ChristmasEntry(date: date, days: 0, nextDay: nextDay, isToday: true, words: w, top: top, bottom: bottom, photo: photo, premium: premium)
+  }
   if today > target { target = cal.date(from: DateComponents(year: year + 1, month: month, day: day))! }
-  // Same number as the app's live countdown (full days left).
+  // Same number as the app's live countdown (full days left); the timer shows the rest of today.
   let calendarDays = cal.dateComponents([.day], from: today, to: target).day ?? 0
-  return ChristmasEntry(date: date, days: max(0, calendarDays - 1), isToday: false, words: w, top: top, bottom: bottom, photo: photo, premium: premium)
+  return ChristmasEntry(date: date, days: max(0, calendarDays - 1), nextDay: nextDay, isToday: false, words: w, top: top, bottom: bottom, photo: photo, premium: premium)
 }
 
 struct Provider: TimelineProvider {
@@ -122,26 +127,59 @@ struct Provider: TimelineProvider {
 
 // MARK: - Views
 
-private struct Headline: View {
+private struct Merry: View {
+  let entry: ChristmasEntry
+  var size: CGFloat
+  var alignment: TextAlignment = .center
+
+  var body: some View {
+    Text(entry.words.merry)
+      .font(.system(size: size, weight: .heavy, design: .serif))
+      .multilineTextAlignment(alignment)
+      .minimumScaleFactor(0.5)
+      .foregroundStyle(Color("cream"))
+  }
+}
+
+/// "39 DAYS" — the big day count with its gold label beside it.
+private struct DaysRow: View {
   let entry: ChristmasEntry
   var size: CGFloat
 
   var body: some View {
-    if entry.isToday {
-      Text(entry.words.merry)
-        .font(.system(size: size * 0.42, weight: .heavy, design: .serif))
-        .multilineTextAlignment(.center)
-        .minimumScaleFactor(0.5)
-    } else if entry.days == 0 {
-      Text(entry.words.tomorrow)
-        .font(.system(size: size * 0.5, weight: .heavy, design: .serif))
-        .minimumScaleFactor(0.5)
-    } else {
+    HStack(alignment: .firstTextBaseline, spacing: 6) {
       Text("\(entry.days)")
         .font(.system(size: size, weight: .heavy, design: .serif))
         .monospacedDigit()
         .minimumScaleFactor(0.5)
+        .foregroundStyle(Color("cream"))
+      Text(entry.words.days.uppercased())
+        .font(.system(size: size * 0.24, weight: .bold))
+        .kerning(1.2)
+        .lineLimit(1)
+        .minimumScaleFactor(0.6)
+        .foregroundStyle(Color("gold"))
     }
+  }
+}
+
+/// Live hh:mm:ss until midnight, ticking every second on the Home Screen.
+private struct LiveTimer: View {
+  let entry: ChristmasEntry
+  var size: CGFloat
+  var alignment: TextAlignment = .leading
+
+  var body: some View {
+    Text(entry.nextDay, style: .timer)
+      .font(.system(size: size, weight: .bold, design: .rounded))
+      .monospacedDigit()
+      .multilineTextAlignment(alignment)
+      .lineLimit(1)
+      .minimumScaleFactor(0.6)
+      .foregroundStyle(Color("cream"))
+      .padding(.vertical, 4)
+      .padding(.horizontal, 10)
+      .background(.black.opacity(0.22), in: RoundedRectangle(cornerRadius: 10, style: .continuous))
   }
 }
 
@@ -150,12 +188,11 @@ private struct PhotoHint: View {
   let size: CGFloat
 
   var body: some View {
-    Text("✨ (text)")
+    Text("✨ " + text)
       .font(.system(size: size, weight: .bold))
       .foregroundStyle(Color("gold"))
       .lineLimit(1)
       .minimumScaleFactor(0.6)
-      .padding(.top, 2)
   }
 }
 
@@ -179,36 +216,43 @@ struct ChristmasWidgetView: View {
       VStack(alignment: .leading, spacing: 0) {
         Text(entry.isToday ? entry.words.merry : "🎄 \(entry.days) \(entry.words.days.lowercased())")
           .font(.system(size: 17, weight: .bold, design: .serif))
-        if !entry.isToday { Text(entry.words.until).font(.system(size: 13)).lineLimit(1) }
+        if !entry.isToday {
+          Text(entry.nextDay, style: .timer).font(.system(size: 15, weight: .semibold, design: .rounded)).monospacedDigit()
+        }
       }
     case .systemMedium:
-      HStack(spacing: 14) {
+      HStack(spacing: 12) {
         if entry.photo == nil {
-          Image(entry.isToday ? "santa" : "tree").resizable().scaledToFit().frame(width: 104, height: 104)
+          Image(entry.isToday ? "santa" : "tree").resizable().scaledToFit().frame(width: 96, height: 96)
         }
-        VStack(alignment: .leading, spacing: 2) {
-          Headline(entry: entry, size: 58).foregroundStyle(Color("cream"))
-          if !entry.isToday {
-            Text(entry.words.days.uppercased()).font(.system(size: 12, weight: .bold)).kerning(1.5).foregroundStyle(Color("gold"))
-            Text(entry.words.until).font(.system(size: 15, weight: .semibold, design: .serif).italic()).foregroundStyle(Color("cream"))
+        VStack(alignment: .leading, spacing: 4) {
+          if entry.isToday {
+            Merry(entry: entry, size: 26, alignment: .leading)
+          } else {
+            DaysRow(entry: entry, size: 50)
+            LiveTimer(entry: entry, size: 22)
+            Text(entry.words.until)
+              .font(.system(size: 14, weight: .semibold, design: .serif).italic())
+              .lineLimit(1)
+              .minimumScaleFactor(0.7)
+              .foregroundStyle(Color("cream"))
           }
           if !entry.premium { PhotoHint(text: entry.words.addPhoto, size: 12) }
         }
         Spacer(minLength: 0)
       }
     default:
-      VStack(spacing: 0) {
+      VStack(spacing: 3) {
         if entry.photo == nil {
-          Image(entry.isToday ? "santa" : "tree").resizable().scaledToFit().frame(width: 52, height: 52)
+          Image(entry.isToday ? "santa" : "tree").resizable().scaledToFit().frame(width: 40, height: 40)
         } else {
           Spacer(minLength: 0)
         }
-        Headline(entry: entry, size: 46).foregroundStyle(Color("cream"))
-        if !entry.isToday {
-          Text(entry.words.days.uppercased()).font(.system(size: 10, weight: .bold)).kerning(1.2).foregroundStyle(Color("gold"))
-          if entry.premium {
-            Text(entry.words.until).font(.system(size: 11, weight: .semibold, design: .serif).italic()).foregroundStyle(Color("cream")).lineLimit(1).minimumScaleFactor(0.7)
-          }
+        if entry.isToday {
+          Merry(entry: entry, size: 20)
+        } else {
+          DaysRow(entry: entry, size: 38)
+          LiveTimer(entry: entry, size: 16, alignment: .center)
         }
         if !entry.premium { PhotoHint(text: entry.words.addPhoto, size: 10) }
       }
